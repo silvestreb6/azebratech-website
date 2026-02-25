@@ -8,6 +8,7 @@ document.addEventListener('DOMContentLoaded', () => {
   initScrollReveal();
   initMobileMenu();
   initContactForm();
+  initLangSwitcher();
 });
 
 /* ---------- Particle Canvas (Hero Background) ---------- */
@@ -175,7 +176,9 @@ function initMobileMenu() {
   toggle.addEventListener('click', () => {
     toggle.classList.toggle('active');
     navLinks.classList.toggle('open');
-    document.body.style.overflow = navLinks.classList.contains('open') ? 'hidden' : '';
+    const isOpen = navLinks.classList.contains('open');
+    document.body.style.overflow = isOpen ? 'hidden' : '';
+    toggle.setAttribute('aria-expanded', isOpen);
   });
 
   // Close menu on link click
@@ -214,7 +217,19 @@ function initContactForm() {
       }
     })
     .catch(() => {
-      alert('Something went wrong. Please try again.');
+      const msg = document.documentElement.lang.startsWith('pt')
+        ? 'Algo deu errado. Por favor, tente novamente.'
+        : 'Something went wrong. Please try again.';
+      alert(msg);
+    });
+  });
+}
+
+/* ---------- Language Switcher ---------- */
+function initLangSwitcher() {
+  document.querySelectorAll('.lang-switch').forEach(link => {
+    link.addEventListener('click', () => {
+      localStorage.setItem('azebra-lang', link.getAttribute('href') === '/pt/' ? 'pt' : 'en');
     });
   });
 }

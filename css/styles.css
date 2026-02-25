@@ -3,7 +3,7 @@
    ============================================ */
 
 /* ---------- Google Font ---------- */
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap');
 
 /* ---------- Design Tokens ---------- */
 :root {
@@ -771,80 +771,27 @@ button {
   border-top: 1px solid var(--border-subtle);
 }
 
-.footer-content {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  flex-wrap: wrap;
-  gap: 20px;
-}
-
-.footer-logo {
-  display: flex;
-  align-items: center;
-  font-size: 1.2rem;
-  font-weight: 800;
-  background: var(--gradient-text);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
-}
-
-.footer-logo-a {
-  height: 28px;
-  width: auto;
-  margin-right: -2px;
-}
-
-
-.footer-links {
-  display: flex;
-  gap: 24px;
-}
-
-.footer-links a {
-  font-size: 0.85rem;
-  color: var(--text-secondary);
-  transition: color var(--transition);
-}
-
-.footer-links a:hover {
-  color: var(--text-primary);
-}
-
-.footer-social {
-  display: flex;
-  gap: 12px;
-}
-
-.footer-social a {
-  width: 36px;
-  height: 36px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  border-radius: 8px;
-  background: rgba(255, 255, 255, 0.04);
-  border: 1px solid var(--border-subtle);
-  color: var(--text-secondary);
-  transition: all var(--transition);
-}
-
-.footer-social a:hover {
-  color: var(--accent-cyan);
-  border-color: rgba(0, 212, 255, 0.3);
-  transform: translateY(-2px);
-}
-
-.footer-social svg {
-  width: 16px;
-  height: 16px;
-}
-
 .footer-bottom {
   text-align: center;
   font-size: 0.8rem;
   color: var(--text-secondary);
+}
+
+/* ---------- Language Switcher ---------- */
+.lang-switch {
+  font-size: 0.8rem;
+  font-weight: 600;
+  padding: 4px 12px;
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  border-radius: 50px;
+  color: var(--text-secondary);
+  transition: all var(--transition);
+  letter-spacing: 0.05em;
+}
+
+.lang-switch:hover {
+  color: var(--accent-cyan);
+  border-color: rgba(0, 212, 255, 0.3);
 }
 
 /* ============================================
