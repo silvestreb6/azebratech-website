@@ -767,7 +767,7 @@ button {
    FOOTER
    ============================================ */
 .footer {
-  padding: 48px 0 32px;
+  padding: 20px 0;
   border-top: 1px solid var(--border-subtle);
 }
 
@@ -843,9 +843,6 @@ button {
 
 .footer-bottom {
   text-align: center;
-  margin-top: 32px;
-  padding-top: 24px;
-  border-top: 1px solid var(--border-subtle);
   font-size: 0.8rem;
   color: var(--text-secondary);
 }
@@ -924,8 +921,9 @@ button {
     padding: 28px;
   }
 
-  .footer-content {
+  .footer-bottom {
     flex-direction: column;
+    gap: 12px;
     text-align: center;
   }
 }
