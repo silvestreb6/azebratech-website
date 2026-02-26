@@ -57,4 +57,32 @@
     <xhtml:link rel="alternate" hreflang="en" href="https://azebratech.com/blog/reduce-patient-no-shows-automation/"/>
     <xhtml:link rel="alternate" hreflang="pt-BR" href="https://azebratech.com/pt/blog/reduzir-faltas-pacientes-automacao-agendamento/"/>
   </url>
+  <url>
+    <loc>https://azebratech.com/blog/healthcare-ai-automation-roi/</loc>
+    <lastmod>2026-02-25</lastmod>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://azebratech.com/blog/healthcare-ai-automation-roi/"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://azebratech.com/pt/blog/roi-automacao-ia-saude/"/>
+  </url>
+  <url>
+    <loc>https://azebratech.com/pt/blog/roi-automacao-ia-saude/</loc>
+    <lastmod>2026-02-25</lastmod>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://azebratech.com/blog/healthcare-ai-automation-roi/"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://azebratech.com/pt/blog/roi-automacao-ia-saude/"/>
+  </url>
+  <url>
+    <loc>https://azebratech.com/blog/healthcare-admin-crisis-automation/</loc>
+    <lastmod>2026-02-25</lastmod>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://azebratech.com/blog/healthcare-admin-crisis-automation/"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://azebratech.com/pt/blog/crise-administrativa-saude-automacao/"/>
+  </url>
+  <url>
+    <loc>https://azebratech.com/pt/blog/crise-administrativa-saude-automacao/</loc>
+    <lastmod>2026-02-25</lastmod>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://azebratech.com/blog/healthcare-admin-crisis-automation/"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://azebratech.com/pt/blog/crise-administrativa-saude-automacao/"/>
+  </url>
 </urlset>
