@@ -779,19 +779,23 @@ button {
 
 /* ---------- Language Switcher ---------- */
 .lang-switch {
-  font-size: 0.8rem;
-  font-weight: 600;
-  padding: 4px 12px;
+  display: inline-flex;
+  align-items: center;
+  padding: 6px;
   border: 1px solid rgba(255, 255, 255, 0.15);
-  border-radius: 50px;
-  color: var(--text-secondary);
+  border-radius: 6px;
   transition: all var(--transition);
-  letter-spacing: 0.05em;
+  line-height: 0;
 }
 
 .lang-switch:hover {
-  color: var(--accent-cyan);
   border-color: rgba(0, 212, 255, 0.3);
+  transform: translateY(-1px);
+}
+
+.lang-switch img {
+  border-radius: 3px;
+  display: block;
 }
 
 /* ============================================
