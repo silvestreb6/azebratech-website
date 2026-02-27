@@ -85,4 +85,18 @@
     <xhtml:link rel="alternate" hreflang="en" href="https://azebratech.com/blog/healthcare-admin-crisis-automation/"/>
     <xhtml:link rel="alternate" hreflang="pt-BR" href="https://azebratech.com/pt/blog/crise-administrativa-saude-automacao/"/>
   </url>
+  <url>
+    <loc>https://azebratech.com/blog/healthcare-process-automation-results/</loc>
+    <lastmod>2026-02-26</lastmod>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://azebratech.com/blog/healthcare-process-automation-results/"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://azebratech.com/pt/blog/automacao-processos-saude-resultados/"/>
+  </url>
+  <url>
+    <loc>https://azebratech.com/pt/blog/automacao-processos-saude-resultados/</loc>
+    <lastmod>2026-02-26</lastmod>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://azebratech.com/blog/healthcare-process-automation-results/"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://azebratech.com/pt/blog/automacao-processos-saude-resultados/"/>
+  </url>
 </urlset>
