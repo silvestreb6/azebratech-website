@@ -1,0 +1,611 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Denial Prevention Checklist — 5 Key Automations | Azebra</title>
+  <meta name="description" content="Printable denial prevention checklist for healthcare billing teams. 5 key automations to reduce claim denials.">
+  <style>
+    /* ================================================
+       CSS RESET & BASE
+       ================================================ */
+    *, *::before, *::after {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    :root {
+      --bg-primary: #0a0a0f;
+      --bg-card: #12121a;
+      --bg-card-hover: #1a1a26;
+      --border-color: #1e1e2e;
+      --text-primary: #e8e8ef;
+      --text-secondary: #9a9ab0;
+      --text-muted: #6a6a80;
+      --cyan: #00d4ff;
+      --purple: #7b2ff7;
+      --magenta: #ff2d95;
+      --gradient-accent: linear-gradient(135deg, #00d4ff, #7b2ff7, #ff2d95);
+      --font-sans: 'Segoe UI', -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif;
+    }
+
+    html {
+      font-size: 16px;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+    }
+
+    body {
+      font-family: var(--font-sans);
+      background: var(--bg-primary);
+      color: var(--text-primary);
+      line-height: 1.6;
+      min-height: 100vh;
+    }
+
+    /* ================================================
+       SCREEN LAYOUT
+       ================================================ */
+    .page-wrapper {
+      max-width: 820px;
+      margin: 0 auto;
+      padding: 2.5rem 1.5rem 3rem;
+    }
+
+    /* --- HEADER --- */
+    .header {
+      text-align: center;
+      margin-bottom: 2.5rem;
+      padding-bottom: 2rem;
+      border-bottom: 1px solid var(--border-color);
+    }
+
+    .brand {
+      display: inline-block;
+      font-size: 1.35rem;
+      font-weight: 700;
+      letter-spacing: 0.04em;
+      background: var(--gradient-accent);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+      margin-bottom: 1.25rem;
+    }
+
+    .header h1 {
+      font-size: 1.85rem;
+      font-weight: 700;
+      line-height: 1.25;
+      color: var(--text-primary);
+      margin-bottom: 0.5rem;
+    }
+
+    .header .subtitle {
+      font-size: 1.05rem;
+      color: var(--text-secondary);
+      font-weight: 400;
+    }
+
+    /* --- SECTIONS --- */
+    .section {
+      background: var(--bg-card);
+      border: 1px solid var(--border-color);
+      border-radius: 12px;
+      padding: 1.75rem 1.75rem 1.5rem;
+      margin-bottom: 1.25rem;
+      transition: background 0.2s ease, border-color 0.2s ease;
+    }
+
+    .section:hover {
+      background: var(--bg-card-hover);
+      border-color: #2a2a3e;
+    }
+
+    .section-number {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      width: 30px;
+      height: 30px;
+      border-radius: 8px;
+      font-size: 0.8rem;
+      font-weight: 700;
+      margin-bottom: 0.75rem;
+      color: #fff;
+    }
+
+    .section:nth-child(1) .section-number { background: var(--cyan); color: #0a0a0f; }
+    .section:nth-child(2) .section-number { background: var(--purple); }
+    .section:nth-child(3) .section-number { background: var(--magenta); }
+    .section:nth-child(4) .section-number { background: linear-gradient(135deg, var(--cyan), var(--purple)); }
+    .section:nth-child(5) .section-number { background: linear-gradient(135deg, var(--purple), var(--magenta)); }
+
+    .section h2 {
+      font-size: 1.15rem;
+      font-weight: 600;
+      color: var(--text-primary);
+      margin-bottom: 1rem;
+      line-height: 1.3;
+    }
+
+    /* --- CHECKLIST ITEMS (screen) --- */
+    .checklist {
+      list-style: none;
+    }
+
+    .checklist li {
+      position: relative;
+      padding: 0.6rem 0 0.6rem 2.25rem;
+      font-size: 0.95rem;
+      color: var(--text-secondary);
+      line-height: 1.5;
+      border-bottom: 1px solid var(--border-color);
+      cursor: pointer;
+      transition: color 0.15s ease;
+    }
+
+    .checklist li:last-child {
+      border-bottom: none;
+      padding-bottom: 0;
+    }
+
+    .checklist li:hover {
+      color: var(--text-primary);
+    }
+
+    /* Custom checkbox (screen only) */
+    .checklist li::before {
+      content: '';
+      position: absolute;
+      left: 0;
+      top: 50%;
+      transform: translateY(-50%);
+      width: 20px;
+      height: 20px;
+      border: 2px solid var(--text-muted);
+      border-radius: 5px;
+      transition: border-color 0.15s ease, background 0.15s ease;
+    }
+
+    .checklist li:hover::before {
+      border-color: var(--cyan);
+    }
+
+    .checklist li.checked::before {
+      border-color: var(--cyan);
+      background: var(--cyan);
+    }
+
+    .checklist li.checked::after {
+      content: '';
+      position: absolute;
+      left: 5px;
+      top: 50%;
+      transform: translateY(-60%) rotate(45deg);
+      width: 6px;
+      height: 11px;
+      border: solid var(--bg-primary);
+      border-width: 0 2.5px 2.5px 0;
+    }
+
+    .checklist li.checked {
+      color: var(--text-muted);
+      text-decoration: line-through;
+      text-decoration-color: var(--text-muted);
+    }
+
+    /* Unicode checkbox hidden on screen, shown in print */
+    .print-checkbox {
+      display: none;
+    }
+
+    /* --- CTA --- */
+    .cta-block {
+      text-align: center;
+      margin-top: 2.5rem;
+      padding: 2rem 1.5rem;
+      background: var(--bg-card);
+      border: 1px solid var(--border-color);
+      border-radius: 12px;
+    }
+
+    .cta-block p {
+      font-size: 1rem;
+      color: var(--text-secondary);
+      margin-bottom: 0.75rem;
+    }
+
+    .cta-block a {
+      display: inline-block;
+      font-size: 0.95rem;
+      font-weight: 600;
+      color: #fff;
+      background: var(--gradient-accent);
+      padding: 0.65rem 1.75rem;
+      border-radius: 8px;
+      text-decoration: none;
+      transition: opacity 0.2s ease;
+    }
+
+    .cta-block a:hover {
+      opacity: 0.88;
+    }
+
+    /* --- FOOTER --- */
+    .footer {
+      text-align: center;
+      margin-top: 2rem;
+      padding-top: 1.5rem;
+      border-top: 1px solid var(--border-color);
+      font-size: 0.85rem;
+      color: var(--text-muted);
+    }
+
+    /* --- PRINT BUTTON (screen only) --- */
+    .print-btn-wrap {
+      text-align: center;
+      margin-bottom: 2rem;
+    }
+
+    .print-btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      background: transparent;
+      border: 1px solid var(--border-color);
+      color: var(--text-secondary);
+      font-family: var(--font-sans);
+      font-size: 0.9rem;
+      padding: 0.55rem 1.4rem;
+      border-radius: 8px;
+      cursor: pointer;
+      transition: border-color 0.2s ease, color 0.2s ease;
+    }
+
+    .print-btn:hover {
+      border-color: var(--cyan);
+      color: var(--cyan);
+    }
+
+    .print-btn svg {
+      width: 16px;
+      height: 16px;
+      stroke: currentColor;
+      fill: none;
+      stroke-width: 2;
+      stroke-linecap: round;
+      stroke-linejoin: round;
+    }
+
+    /* ================================================
+       RESPONSIVE
+       ================================================ */
+    @media (max-width: 600px) {
+      .page-wrapper {
+        padding: 1.5rem 1rem 2rem;
+      }
+
+      .header h1 {
+        font-size: 1.45rem;
+      }
+
+      .section {
+        padding: 1.25rem 1.25rem 1rem;
+        border-radius: 10px;
+      }
+
+      .section h2 {
+        font-size: 1.05rem;
+      }
+
+      .checklist li {
+        font-size: 0.9rem;
+      }
+    }
+
+    /* ================================================
+       PRINT STYLES
+       ================================================ */
+    @media print {
+      @page {
+        size: A4;
+        margin: 18mm 16mm 18mm 16mm;
+      }
+
+      html {
+        font-size: 11pt;
+      }
+
+      body {
+        background: #fff;
+        color: #111;
+        -webkit-print-color-adjust: exact;
+        print-color-adjust: exact;
+      }
+
+      .page-wrapper {
+        max-width: 100%;
+        padding: 0;
+      }
+
+      .print-btn-wrap {
+        display: none;
+      }
+
+      /* Header */
+      .header {
+        margin-bottom: 1.25rem;
+        padding-bottom: 0.75rem;
+        border-bottom: 2px solid #222;
+      }
+
+      .brand {
+        font-size: 1.1rem;
+        background: none;
+        -webkit-text-fill-color: #333;
+        color: #333;
+      }
+
+      .header h1 {
+        font-size: 1.5rem;
+        color: #111;
+      }
+
+      .header .subtitle {
+        font-size: 0.95rem;
+        color: #555;
+      }
+
+      /* Sections */
+      .section {
+        background: none;
+        border: 1px solid #ccc;
+        border-radius: 6px;
+        padding: 0.85rem 1rem 0.65rem;
+        margin-bottom: 0.65rem;
+        page-break-inside: avoid;
+        break-inside: avoid;
+      }
+
+      .section:hover {
+        background: none;
+        border-color: #ccc;
+      }
+
+      .section-number {
+        width: 22px;
+        height: 22px;
+        font-size: 0.7rem;
+        border-radius: 5px;
+        margin-bottom: 0.4rem;
+        background: #222 !important;
+        color: #fff !important;
+      }
+
+      .section h2 {
+        font-size: 1.05rem;
+        color: #111;
+        margin-bottom: 0.5rem;
+      }
+
+      /* Checklist print: use Unicode checkbox */
+      .checklist li {
+        padding: 0.3rem 0 0.3rem 0;
+        font-size: 0.9rem;
+        color: #222;
+        border-bottom: 1px solid #e5e5e5;
+      }
+
+      .checklist li::before,
+      .checklist li::after {
+        display: none;
+      }
+
+      .checklist li.checked {
+        color: #222;
+        text-decoration: none;
+      }
+
+      .print-checkbox {
+        display: inline;
+        font-size: 1rem;
+        margin-right: 0.45rem;
+      }
+
+      /* CTA */
+      .cta-block {
+        background: none;
+        border: 1px dashed #999;
+        border-radius: 6px;
+        padding: 0.85rem 1rem;
+        margin-top: 1rem;
+      }
+
+      .cta-block p {
+        color: #333;
+        font-size: 0.9rem;
+        margin-bottom: 0.25rem;
+      }
+
+      .cta-block a {
+        background: none;
+        color: #111;
+        padding: 0;
+        font-weight: 600;
+        text-decoration: underline;
+      }
+
+      /* Footer */
+      .footer {
+        margin-top: 1rem;
+        padding-top: 0.6rem;
+        border-top: 1px solid #ccc;
+        font-size: 0.8rem;
+        color: #666;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="page-wrapper">
+
+    <!-- Print Button -->
+    <div class="print-btn-wrap">
+      <button class="print-btn" onclick="window.print()">
+        <svg viewBox="0 0 24 24"><path d="M6 9V2h12v7"/><path d="M6 18H4a2 2 0 0 1-2-2v-5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2h-2"/><rect x="6" y="14" width="12" height="8"/></svg>
+        Print Checklist
+      </button>
+    </div>
+
+    <!-- Header -->
+    <header class="header">
+      <div class="brand">Azebra</div>
+      <h1>Denial Prevention Checklist &mdash; 5 Key Automations</h1>
+      <p class="subtitle">Action checklist for healthcare billing teams</p>
+    </header>
+
+    <!-- Sections -->
+    <div class="sections">
+
+      <!-- Section 1 -->
+      <div class="section">
+        <div class="section-number">1</div>
+        <h2>Real-Time Eligibility Verification</h2>
+        <ul class="checklist">
+          <li>
+            <span class="print-checkbox">&#9633;</span>
+            Connect EHR to payer portals for automated eligibility checks
+          </li>
+          <li>
+            <span class="print-checkbox">&#9633;</span>
+            Verify insurance status before every appointment
+          </li>
+          <li>
+            <span class="print-checkbox">&#9633;</span>
+            Flag coverage gaps and notify front desk staff
+          </li>
+          <li>
+            <span class="print-checkbox">&#9633;</span>
+            Confirm prior authorization requirements automatically
+          </li>
+        </ul>
+      </div>
+
+      <!-- Section 2 -->
+      <div class="section">
+        <div class="section-number">2</div>
+        <h2>Automated Claim Scrubbing</h2>
+        <ul class="checklist">
+          <li>
+            <span class="print-checkbox">&#9633;</span>
+            Implement pre-submission claim validation rules
+          </li>
+          <li>
+            <span class="print-checkbox">&#9633;</span>
+            Cross-check diagnosis codes against payer-specific policies
+          </li>
+          <li>
+            <span class="print-checkbox">&#9633;</span>
+            Verify modifier usage and medical necessity indicators
+          </li>
+          <li>
+            <span class="print-checkbox">&#9633;</span>
+            Flag missing or inconsistent documentation before submission
+          </li>
+        </ul>
+      </div>
+
+      <!-- Section 3 -->
+      <div class="section">
+        <div class="section-number">3</div>
+        <h2>Prior Authorization Automation</h2>
+        <ul class="checklist">
+          <li>
+            <span class="print-checkbox">&#9633;</span>
+            Digitize prior auth request submission and tracking
+          </li>
+          <li>
+            <span class="print-checkbox">&#9633;</span>
+            Set up automated status follow-ups with payers
+          </li>
+          <li>
+            <span class="print-checkbox">&#9633;</span>
+            Create alerts for approaching auth expiration dates
+          </li>
+          <li>
+            <span class="print-checkbox">&#9633;</span>
+            Maintain a centralized dashboard for all pending authorizations
+          </li>
+        </ul>
+      </div>
+
+      <!-- Section 4 -->
+      <div class="section">
+        <div class="section-number">4</div>
+        <h2>AI-Assisted Coding Review</h2>
+        <ul class="checklist">
+          <li>
+            <span class="print-checkbox">&#9633;</span>
+            Deploy NLP-based coding suggestion tools
+          </li>
+          <li>
+            <span class="print-checkbox">&#9633;</span>
+            Cross-reference ICD-10/CPT codes with clinical documentation
+          </li>
+          <li>
+            <span class="print-checkbox">&#9633;</span>
+            Identify upcoding/undercoding patterns in historical data
+          </li>
+        </ul>
+      </div>
+
+      <!-- Section 5 -->
+      <div class="section">
+        <div class="section-number">5</div>
+        <h2>Automated Denial Tracking &amp; Appeals</h2>
+        <ul class="checklist">
+          <li>
+            <span class="print-checkbox">&#9633;</span>
+            Set up real-time denial alerts by payer and reason code
+          </li>
+          <li>
+            <span class="print-checkbox">&#9633;</span>
+            Automate appeal letter generation with supporting documentation
+          </li>
+          <li>
+            <span class="print-checkbox">&#9633;</span>
+            Track appeal outcomes and identify recurring denial patterns
+          </li>
+          <li>
+            <span class="print-checkbox">&#9633;</span>
+            Create monthly denial analytics reports for leadership
+          </li>
+        </ul>
+      </div>
+
+    </div>
+
+    <!-- CTA -->
+    <div class="cta-block">
+      <p>Need help implementing these automations?</p>
+      <a href="https://azebratech.com/denial-analysis/">Visit azebratech.com/denial-analysis</a>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+      &copy; 2026 Azevedo Braga Tech LLC | azebratech.com
+    </footer>
+
+  </div>
+
+  <!-- Interactive checkbox toggling (screen only) -->
+  <script>
+    document.querySelectorAll('.checklist li').forEach(function (item) {
+      item.addEventListener('click', function () {
+        this.classList.toggle('checked');
+      });
+    });
+  </script>
+</body>
+</html>

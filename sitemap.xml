@@ -113,4 +113,18 @@
     <xhtml:link rel="alternate" hreflang="en" href="https://azebratech.com/blog/healthcare-process-automation-results/"/>
     <xhtml:link rel="alternate" hreflang="pt-BR" href="https://azebratech.com/pt/blog/automacao-processos-saude-resultados/"/>
   </url>
+  <url>
+    <loc>https://azebratech.com/denial-analysis/</loc>
+    <lastmod>2026-02-28</lastmod>
+    <priority>0.9</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://azebratech.com/denial-analysis/"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://azebratech.com/pt/diagnostico-faturamento/"/>
+  </url>
+  <url>
+    <loc>https://azebratech.com/pt/diagnostico-faturamento/</loc>
+    <lastmod>2026-02-28</lastmod>
+    <priority>0.9</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://azebratech.com/denial-analysis/"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://azebratech.com/pt/diagnostico-faturamento/"/>
+  </url>
 </urlset>

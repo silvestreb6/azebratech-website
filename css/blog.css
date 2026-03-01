@@ -556,6 +556,364 @@
   gap: 10px;
 }
 
+/* ---------- Share Bar ---------- */
+.share-bar {
+  max-width: 720px;
+  margin: 48px auto;
+  padding-top: 24px;
+  border-top: 1px solid var(--border-subtle);
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.share-label {
+  font-size: 0.85rem;
+  font-weight: 500;
+  color: var(--text-secondary);
+}
+
+.share-buttons {
+  display: flex;
+  gap: 10px;
+}
+
+.share-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 8px 16px;
+  font-size: 0.85rem;
+  font-weight: 500;
+  border-radius: 50px;
+  border: 1px solid var(--border-subtle);
+  color: var(--text-secondary);
+  text-decoration: none;
+  transition: all var(--transition);
+}
+
+.share-btn svg {
+  width: 16px;
+  height: 16px;
+  fill: currentColor;
+}
+
+.share-btn.share-linkedin:hover {
+  border-color: #0a66c2;
+  color: #0a66c2;
+}
+
+.share-btn.share-whatsapp:hover {
+  border-color: #25d366;
+  color: #25d366;
+}
+
+/* ---------- Denial Calculator ---------- */
+.denial-calculator {
+  max-width: 720px;
+  margin: 40px auto;
+  padding: 32px;
+  background: var(--bg-card);
+  border: 1px solid var(--border-subtle);
+  border-radius: var(--radius-lg);
+  position: relative;
+  overflow: hidden;
+}
+
+.denial-calculator::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 2px;
+  background: var(--gradient);
+}
+
+.denial-calculator h3 {
+  font-size: 1.2rem;
+  font-weight: 700;
+  margin-bottom: 8px;
+}
+
+.denial-calculator .calc-subtitle {
+  font-size: 0.9rem;
+  color: var(--text-secondary);
+  margin-bottom: 24px;
+  line-height: 1.6;
+}
+
+.calc-inputs {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 16px;
+  margin-bottom: 20px;
+}
+
+.calc-input-group label {
+  display: block;
+  font-size: 0.85rem;
+  font-weight: 500;
+  color: var(--text-secondary);
+  margin-bottom: 8px;
+}
+
+.calc-input-group input {
+  width: 100%;
+  padding: 12px 16px;
+  font-size: 0.95rem;
+  font-family: inherit;
+  color: var(--text-primary);
+  background: rgba(255, 255, 255, 0.04);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: var(--radius);
+  transition: all var(--transition);
+  outline: none;
+}
+
+.calc-input-group input::placeholder {
+  color: rgba(136, 136, 160, 0.6);
+}
+
+.calc-input-group input:focus {
+  border-color: var(--accent-cyan);
+  box-shadow: 0 0 0 3px rgba(0, 212, 255, 0.1);
+}
+
+.calc-btn {
+  width: 100%;
+  padding: 14px;
+  font-size: 1rem;
+  font-weight: 600;
+  font-family: inherit;
+  color: #fff;
+  background: var(--gradient);
+  border: none;
+  border-radius: var(--radius);
+  cursor: pointer;
+  transition: transform var(--transition), box-shadow var(--transition);
+}
+
+.calc-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 25px rgba(0, 212, 255, 0.25), 0 8px 25px rgba(123, 47, 247, 0.15);
+}
+
+.calc-results {
+  margin-top: 32px;
+  display: none;
+}
+
+.calc-results.visible {
+  display: block;
+}
+
+.calc-results .stat-grid {
+  margin: 20px 0;
+}
+
+.calc-results .calc-cta {
+  text-align: center;
+  margin-top: 24px;
+}
+
+.calc-note {
+  font-size: 0.8rem;
+  color: var(--text-secondary);
+  margin-top: 16px;
+  line-height: 1.5;
+  opacity: 0.7;
+}
+
+/* ---------- Lead Magnet Card ---------- */
+.lead-magnet-card {
+  max-width: 720px;
+  margin: 48px auto;
+  padding: 32px;
+  background: var(--bg-card);
+  border: 1px solid rgba(0, 212, 255, 0.15);
+  border-radius: var(--radius-lg);
+  position: relative;
+  overflow: hidden;
+}
+
+.lead-magnet-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 2px;
+  background: var(--accent-cyan);
+}
+
+.lead-magnet-card h3 {
+  font-size: 1.15rem;
+  font-weight: 700;
+  margin-bottom: 8px;
+}
+
+.lead-magnet-card > p {
+  font-size: 0.95rem;
+  color: var(--text-secondary);
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+
+.lead-magnet-fields {
+  display: flex;
+  gap: 12px;
+  align-items: flex-end;
+}
+
+.lead-magnet-fields input {
+  flex: 1;
+  padding: 12px 16px;
+  font-size: 0.95rem;
+  font-family: inherit;
+  color: var(--text-primary);
+  background: rgba(255, 255, 255, 0.04);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: var(--radius);
+  transition: all var(--transition);
+  outline: none;
+}
+
+.lead-magnet-fields input::placeholder {
+  color: rgba(136, 136, 160, 0.6);
+}
+
+.lead-magnet-fields input:focus {
+  border-color: var(--accent-cyan);
+  box-shadow: 0 0 0 3px rgba(0, 212, 255, 0.1);
+}
+
+.lead-magnet-fields .btn-primary {
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+
+.lead-magnet-success {
+  display: none;
+  padding: 16px 20px;
+  background: rgba(16, 185, 129, 0.1);
+  border: 1px solid rgba(16, 185, 129, 0.3);
+  border-radius: var(--radius);
+  margin-top: 16px;
+}
+
+.lead-magnet-success.visible {
+  display: block;
+}
+
+.lead-magnet-success p {
+  margin: 0;
+  font-size: 0.95rem;
+  color: #10b981;
+}
+
+.lead-magnet-success a {
+  color: var(--accent-cyan);
+  font-weight: 600;
+}
+
+/* ---------- Landing Page ---------- */
+.landing-hero {
+  padding-top: calc(var(--nav-height) + 64px);
+  padding-bottom: 48px;
+  text-align: center;
+}
+
+.landing-hero h1 {
+  font-size: clamp(1.6rem, 4vw, 2.4rem);
+  font-weight: 800;
+  line-height: 1.2;
+  letter-spacing: -0.03em;
+  margin-bottom: 16px;
+}
+
+.landing-hero .landing-subtitle {
+  font-size: 1.1rem;
+  color: var(--text-secondary);
+  line-height: 1.7;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.landing-benefits {
+  display: flex;
+  justify-content: center;
+  gap: 32px;
+  margin: 40px 0 48px;
+  flex-wrap: wrap;
+}
+
+.landing-benefit {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 0.95rem;
+  font-weight: 500;
+  color: var(--text-secondary);
+}
+
+.landing-benefit svg {
+  width: 20px;
+  height: 20px;
+  color: var(--accent-cyan);
+  flex-shrink: 0;
+}
+
+.landing-form-section {
+  max-width: 560px;
+  margin: 0 auto;
+  padding-bottom: 64px;
+}
+
+.landing-form-section .contact-form {
+  background: var(--bg-card);
+  border: 1px solid var(--border-subtle);
+  border-radius: var(--radius-lg);
+  padding: 40px;
+}
+
+.landing-what-you-get {
+  max-width: 560px;
+  margin: 0 auto 48px;
+  padding: 28px;
+  background: var(--bg-card);
+  border: 1px solid var(--border-subtle);
+  border-radius: var(--radius);
+}
+
+.landing-what-you-get h3 {
+  font-size: 1.1rem;
+  font-weight: 700;
+  margin-bottom: 16px;
+}
+
+.landing-what-you-get ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.landing-what-you-get li {
+  padding: 8px 0;
+  font-size: 0.95rem;
+  color: var(--text-secondary);
+  display: flex;
+  align-items: baseline;
+  gap: 10px;
+}
+
+.landing-what-you-get li::before {
+  content: '\2713';
+  color: var(--accent-cyan);
+  font-weight: 700;
+  flex-shrink: 0;
+}
+
 /* ---------- Blog Responsive ---------- */
 @media (max-width: 768px) {
   .blog-grid {
@@ -601,5 +959,37 @@
 
   .faq .faq-answer {
     padding: 0 20px 16px;
+  }
+
+  .share-bar {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 12px;
+  }
+
+  .calc-inputs {
+    grid-template-columns: 1fr;
+  }
+
+  .denial-calculator {
+    padding: 24px 20px;
+  }
+
+  .lead-magnet-fields {
+    flex-direction: column;
+  }
+
+  .lead-magnet-card {
+    padding: 24px 20px;
+  }
+
+  .landing-benefits {
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;
+  }
+
+  .landing-form-section .contact-form {
+    padding: 28px 20px;
   }
 }
