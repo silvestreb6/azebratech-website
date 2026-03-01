@@ -86,6 +86,20 @@
     <xhtml:link rel="alternate" hreflang="pt-BR" href="https://azebratech.com/pt/blog/crise-administrativa-saude-automacao/"/>
   </url>
   <url>
+    <loc>https://azebratech.com/blog/healthcare-claim-denial-automation/</loc>
+    <lastmod>2026-02-28</lastmod>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://azebratech.com/blog/healthcare-claim-denial-automation/"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://azebratech.com/pt/blog/glosas-medicas-automacao-faturamento/"/>
+  </url>
+  <url>
+    <loc>https://azebratech.com/pt/blog/glosas-medicas-automacao-faturamento/</loc>
+    <lastmod>2026-02-28</lastmod>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://azebratech.com/blog/healthcare-claim-denial-automation/"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://azebratech.com/pt/blog/glosas-medicas-automacao-faturamento/"/>
+  </url>
+  <url>
     <loc>https://azebratech.com/blog/healthcare-process-automation-results/</loc>
     <lastmod>2026-02-26</lastmod>
     <priority>0.7</priority>
