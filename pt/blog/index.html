@@ -5,6 +5,10 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <!-- Google Analytics (GA4) -->
+  <!-- Resource hints for third-party origins -->
+  <link rel="preconnect" href="https://www.googletagmanager.com">
+  <link rel="dns-prefetch" href="https://www.google-analytics.com">
+  <link rel="dns-prefetch" href="https://flagcdn.com">
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-3CKLBMHQVT"></script>
   <script>
     window.dataLayer = window.dataLayer || [];
@@ -40,7 +44,8 @@
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" onload="this.onload=null;this.rel='stylesheet'">
+  <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"></noscript>
 
   <link rel="stylesheet" href="/css/styles.css">
   <link rel="stylesheet" href="/css/blog.css">
@@ -58,6 +63,31 @@
       "name": "Azevedo Braga Tech LLC",
       "url": "https://azebratech.com"
     }
+  }
+  </script>
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "ItemList",
+    "name": "Blog Azebra — Automação em Saúde",
+    "description": "Guias práticos sobre automação, IA e software para empresas de saúde.",
+    "url": "https://azebratech.com/pt/blog/",
+    "numberOfItems": 12,
+    "itemListElement": [
+      {"@type": "ListItem", "position": 1, "url": "https://azebratech.com/pt/blog/gestao-informacoes-em-saude/"},
+      {"@type": "ListItem", "position": 2, "url": "https://azebratech.com/pt/blog/governanca-informacao-saude/"},
+      {"@type": "ListItem", "position": 3, "url": "https://azebratech.com/pt/blog/plataforma-gestao-compliance-saude/"},
+      {"@type": "ListItem", "position": 4, "url": "https://azebratech.com/pt/blog/servicos-gestao-contas-medicas/"},
+      {"@type": "ListItem", "position": 5, "url": "https://azebratech.com/pt/blog/ciclo-receita-manual-vs-automatizado/"},
+      {"@type": "ListItem", "position": 6, "url": "https://azebratech.com/pt/blog/autorizacao-previa-automacao-medicos/"},
+      {"@type": "ListItem", "position": 7, "url": "https://azebratech.com/pt/blog/glosas-medicas-automacao-faturamento/"},
+      {"@type": "ListItem", "position": 8, "url": "https://azebratech.com/pt/blog/automacao-processos-saude-resultados/"},
+      {"@type": "ListItem", "position": 9, "url": "https://azebratech.com/pt/blog/roi-automacao-ia-saude/"},
+      {"@type": "ListItem", "position": 10, "url": "https://azebratech.com/pt/blog/crise-administrativa-saude-automacao/"},
+      {"@type": "ListItem", "position": 11, "url": "https://azebratech.com/pt/blog/automacao-faturamento-clinica-pequeno-porte/"},
+      {"@type": "ListItem", "position": 12, "url": "https://azebratech.com/pt/blog/reduzir-faltas-pacientes-automacao-agendamento/"}
+    ]
   }
   </script>
 </head>
@@ -94,6 +124,50 @@
       </div>
 
       <div class="blog-grid">
+        <!-- Blog Card: Gestão de Informações em Saúde (Sistemas) -->
+        <a href="/pt/blog/gestao-informacoes-em-saude/" class="blog-card reveal">
+          <span class="card-meta">Março 2026 &middot; 18 min de leitura</span>
+          <h2>Gestão de Informações em Saúde: Sistemas, Tecnologia e Guia de Implementação [2026]</h2>
+          <p>96% dos hospitais têm prontuário eletrônico — mas R$4,2B em receita são perdidos por fragmentação de dados. O guia completo de HIS, RNDS, TISS, índice mestre de pacientes e LGPD.</p>
+          <span class="read-more">
+            Ler artigo
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
+          </span>
+        </a>
+
+        <!-- Blog Card: Governança da Informação em Saúde -->
+        <a href="/pt/blog/governanca-informacao-saude/" class="blog-card reveal">
+          <span class="card-meta">Março 2026 &middot; 17 min de leitura</span>
+          <h2>Governança da Informação em Saúde: Prontuários, MDC, LGPD e Carreiras [2026]</h2>
+          <p>74% das glosas têm origem em erros de documentação e codificação. O guia completo de governança da informação em saúde: CFM, ANS, SBIS, MDC e as carreiras que governam os dados de 200 milhões de brasileiros.</p>
+          <span class="read-more">
+            Ler artigo
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
+          </span>
+        </a>
+
+        <!-- Blog Card: Plataforma de Gestão de Compliance -->
+        <a href="/pt/blog/plataforma-gestao-compliance-saude/" class="blog-card reveal">
+          <span class="card-meta">Março 2026 &middot; 16 min de leitura</span>
+          <h2>Sistema de Gestão de Compliance na Saúde: Guia Completo 2026</h2>
+          <p>Falhas de compliance custam US$100 a US$50.000 por violação. Como uma plataforma cobre os 7 elementos do OIG, triagem de listas restritivas, CAPA e ciclo de vida de políticas — com dados reais.</p>
+          <span class="read-more">
+            Ler artigo
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
+          </span>
+        </a>
+
+        <!-- Blog Card: Serviços de Gestão de Contas Médicas -->
+        <a href="/pt/blog/servicos-gestao-contas-medicas/" class="blog-card reveal">
+          <span class="card-meta">Março 2026 &middot; 15 min de leitura</span>
+          <h2>Serviços de Gestão de Contas Médicas: O Fluxo em 6 Etapas que Maximiza o Faturamento [2026]</h2>
+          <p>Apenas 73% das clínicas alcançam 95%+ de aprovação na primeira submissão. Guia completo: validação pré-faturamento, conciliação de ERA/EOB, análise de subpagamento e automação de recursos.</p>
+          <span class="read-more">
+            Ler artigo
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
+          </span>
+        </a>
+
         <!-- Blog Card: Ciclo de Receita Manual vs. Automatizado -->
         <a href="/pt/blog/ciclo-receita-manual-vs-automatizado/" class="blog-card reveal">
           <span class="card-meta">Março 2026 &middot; 14 min de leitura</span>
@@ -188,8 +262,38 @@
   <!-- ========== FOOTER ========== -->
   <footer class="footer">
     <div class="container">
+      <div class="footer-grid">
+        <div class="footer-col">
+          <a href="/pt/" class="footer-logo" aria-label="Azebra Home"><img src="/assets/logo.svg" alt="A" class="logo-a" width="20" height="20">zebra</a>
+          <p class="footer-tagline">Automação em saúde para clínicas, hospitais e equipes de faturamento.</p>
+          <a href="https://wa.me/17276373574" target="_blank" rel="noopener noreferrer" class="footer-whatsapp">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 0 1-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 0 1-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 0 1 2.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0 0 12.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 0 0 5.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 0 0-3.48-8.413z"/></svg>
+            +1 (727) 637-3574
+          </a>
+        </div>
+        <div class="footer-col">
+          <h4 class="footer-heading">Serviços</h4>
+          <nav aria-label="Navegação de serviços no rodapé">
+            <a href="/pt/lp/diagnostico-faturamento/">Diagnóstico de Faturamento</a>
+            <a href="/pt/lp/analise-compliance-hospitalar/">Análise de Compliance</a>
+            <a href="/pt/#services">Nossos Serviços</a>
+            <a href="/pt/#contact">Fale Conosco</a>
+          </nav>
+        </div>
+        <div class="footer-col">
+          <h4 class="footer-heading">Artigos Recentes</h4>
+          <nav aria-label="Navegação do blog no rodapé">
+            <a href="/pt/blog/gestao-informacoes-em-saude/">Gestão de Informações em Saúde</a>
+            <a href="/pt/blog/glosas-medicas-automacao-faturamento/">Automação de Glosas</a>
+            <a href="/pt/blog/autorizacao-previa-automacao-medicos/">Autorização Prévia</a>
+            <a href="/pt/blog/ciclo-receita-manual-vs-automatizado/">Ciclo de Receita</a>
+            <a href="/pt/blog/">Ver todos os artigos →</a>
+          </nav>
+        </div>
+      </div>
       <div class="footer-bottom">
-        &copy; 2026 Azevedo Braga Tech LLC. Todos os direitos reservados.
+        <span>&copy; 2026 Azevedo Braga Tech LLC. Todos os direitos reservados.</span>
+        <a href="/blog/" class="lang-switch" title="English version"><img src="https://flagcdn.com/24x18/us.png" srcset="https://flagcdn.com/48x36/us.png 2x" width="24" height="18" alt="English" loading="lazy"></a>
       </div>
     </div>
   </footer>

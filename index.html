@@ -5,6 +5,10 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <!-- Google Analytics (GA4) -->
+  <!-- Resource hints for third-party origins -->
+  <link rel="preconnect" href="https://www.googletagmanager.com">
+  <link rel="dns-prefetch" href="https://www.google-analytics.com">
+  <link rel="dns-prefetch" href="https://flagcdn.com">
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-3CKLBMHQVT"></script>
   <script>
     window.dataLayer = window.dataLayer || [];
@@ -12,8 +16,8 @@
     gtag('js', new Date());
     gtag('config', 'G-3CKLBMHQVT');
   </script>
-  <title>Azebra — Intelligent Automation & Software Solutions</title>
-  <meta name="description" content="Azevedo Braga Tech LLC builds smart solutions that transform your business through AI, process automation, and custom software development.">
+  <title>Healthcare Automation & AI Solutions | Azebra</title>
+  <meta name="description" content="Azebra builds healthcare automation software that reduces claim denials, streamlines prior auth, and cuts RCM costs. Free diagnostic for US practices.">
   <meta name="theme-color" content="#0a0a0f">
   <link rel="canonical" href="https://azebratech.com/">
 
@@ -26,20 +30,24 @@
   <script src="js/i18n-redirect.js"></script>
 
   <!-- Open Graph -->
-  <meta property="og:title" content="Azebra — Intelligent Automation & Software Solutions">
-  <meta property="og:description" content="We build smart solutions that transform your business through AI, automation, and custom software.">
+  <meta property="og:title" content="Healthcare Automation & AI Solutions | Azebra">
+  <meta property="og:description" content="Azebra builds healthcare automation software that reduces claim denials, streamlines prior auth, and cuts RCM costs. Free diagnostic for US practices.">
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://azebratech.com/">
   <meta property="og:site_name" content="Azebra">
 
   <!-- Twitter Card -->
   <meta name="twitter:card" content="summary">
-  <meta name="twitter:title" content="Azebra — Intelligent Automation & Software Solutions">
-  <meta name="twitter:description" content="We build smart solutions that transform your business through AI, automation, and custom software.">
+  <meta name="twitter:title" content="Healthcare Automation & AI Solutions | Azebra">
+  <meta name="twitter:description" content="Azebra builds healthcare automation software that reduces claim denials, streamlines prior auth, and cuts RCM costs. Free diagnostic for US practices.">
 
   <!-- Favicon -->
   <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
 
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" onload="this.onload=null;this.rel='stylesheet'">
+  <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"></noscript>
   <link rel="stylesheet" href="css/styles.css">
 
   <!-- Structured Data -->
@@ -55,8 +63,15 @@
       "@type": "PostalAddress",
       "addressCountry": "US"
     },
-    "description": "We build smart solutions that transform your business through AI, process automation, and custom software development.",
-    "knowsAbout": ["Process Automation", "Software Development", "AI", "Machine Learning", "RPA", "Custom Web Applications"],
+    "email": "contact@azebra.com",
+    "description": "Azebra builds healthcare automation software that reduces claim denials, streamlines prior authorizations, and cuts revenue cycle costs by up to 40%.",
+    "knowsAbout": ["Healthcare Revenue Cycle Automation", "Claim Denial Management", "Prior Authorization Automation", "RCM Software", "Healthcare Process Automation", "Medical Billing Automation", "Healthcare AI Solutions"],
+    "member": {
+      "@type": "Person",
+      "name": "Silvestre Braga",
+      "jobTitle": "Technology Lead",
+      "sameAs": ["https://www.linkedin.com/in/silvestre-braga/"]
+    },
     "hasOfferCatalog": {
       "@type": "OfferCatalog",
       "name": "Technology Services",
@@ -242,6 +257,9 @@
 
         <!-- Right: Form -->
         <form class="contact-form reveal" id="contact-form" action="https://formspree.io/f/xreajzel" method="POST">
+          <input type="text" name="_gotcha" class="hp-field" tabindex="-1" autocomplete="off">
+          <input type="hidden" name="source" value="homepage-contact-en">
+          <input type="hidden" name="_subject" value="Homepage Contact Request">
           <div class="form-row">
             <div class="form-group">
               <label for="name">Name</label>
@@ -263,6 +281,13 @@
             <textarea id="message" name="message" placeholder="Tell us about your project..." required></textarea>
           </div>
 
+          <div class="form-consent">
+            <label>
+              <input type="checkbox" name="privacy_consent" required>
+              I agree with the <a href="/privacy/" target="_blank" rel="noopener noreferrer">Privacy Policy</a> and authorize contact regarding this request.
+            </label>
+          </div>
+
           <button type="submit" class="btn-submit">
             <span class="btn-text">Send Message</span>
             <span class="btn-success">
@@ -278,8 +303,45 @@
   <!-- ========== FOOTER ========== -->
   <footer class="footer">
     <div class="container">
+      <div class="footer-grid">
+        <div class="footer-col">
+          <a href="/" class="footer-logo" aria-label="Azebra Home">
+            <img src="/assets/logo.svg" alt="A" class="logo-a" width="20" height="20">zebra
+          </a>
+          <p class="footer-tagline">Healthcare automation for clinics, hospitals, and RCM teams.</p>
+          <a href="https://wa.me/17276373574" target="_blank" rel="noopener noreferrer" class="footer-whatsapp">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 0 1-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 0 1-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 0 1 2.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0 0 12.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 0 0 5.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 0 0-3.48-8.413z"/></svg>
+            +1 (727) 637-3574
+          </a>
+        </div>
+
+        <div class="footer-col">
+          <h4 class="footer-heading">Services</h4>
+          <nav aria-label="Services footer navigation">
+            <a href="/lp/denial-analysis/">Free Denial Analysis</a>
+            <a href="/lp/compliance-gap-analysis/">Compliance Gap Analysis</a>
+            <a href="/#services">All Services</a>
+            <a href="/#contact">Contact Us</a>
+          </nav>
+        </div>
+
+        <div class="footer-col">
+          <h4 class="footer-heading">Latest Articles</h4>
+          <nav aria-label="Blog footer navigation">
+            <a href="/blog/healthcare-information-management/">Healthcare Information Management</a>
+            <a href="/blog/healthcare-claim-denial-automation/">Claim Denial Automation</a>
+            <a href="/blog/prior-authorization-automation-physicians/">Prior Authorization</a>
+            <a href="/blog/manual-vs-automated-revenue-cycle/">Revenue Cycle Automation</a>
+            <a href="/blog/">View all articles →</a>
+          </nav>
+        </div>
+      </div>
+
       <div class="footer-bottom">
-        &copy; 2026 Azevedo Braga Tech LLC. All rights reserved.
+        <span>&copy; 2026 Azevedo Braga Tech LLC. All rights reserved.</span>
+        <a href="/pt/" class="lang-switch" title="Versão em Português">
+          <img src="https://flagcdn.com/24x18/br.png" srcset="https://flagcdn.com/48x36/br.png 2x" width="24" height="18" alt="Português" loading="lazy">
+        </a>
       </div>
     </div>
   </footer>

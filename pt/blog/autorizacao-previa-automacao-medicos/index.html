@@ -5,6 +5,10 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <!-- Google Analytics (GA4) -->
+  <!-- Resource hints for third-party origins -->
+  <link rel="preconnect" href="https://www.googletagmanager.com">
+  <link rel="dns-prefetch" href="https://www.google-analytics.com">
+  <link rel="dns-prefetch" href="https://flagcdn.com">
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-3CKLBMHQVT"></script>
   <script>
     window.dataLayer = window.dataLayer || [];
@@ -35,7 +39,8 @@
   <link rel="icon" href="/assets/favicon.svg" type="image/svg+xml">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" onload="this.onload=null;this.rel='stylesheet'">
+  <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"></noscript>
   <link rel="stylesheet" href="/css/styles.css">
   <link rel="stylesheet" href="/css/blog.css">
 
@@ -49,9 +54,10 @@
     "datePublished": "2026-03-01",
     "dateModified": "2026-03-01",
     "author": {
-      "@type": "Organization",
-      "name": "Azebra",
-      "url": "https://azebratech.com"
+      "@type": "Person",
+      "name": "Silvestre Braga",
+      "url": "https://www.linkedin.com/in/silvestre-braga/",
+      "sameAs": ["https://www.linkedin.com/in/silvestre-braga/"]
     },
     "publisher": {
       "@type": "Organization",
@@ -231,7 +237,7 @@
 
         <p>Os custos indiretos podem ser ainda maiores. A pesquisa AMA constatou que <strong>89% dos médicos dizem que a autorização prévia contribui para o burnout médico</strong>. O turnover por burnout é um dos eventos mais caros que uma clínica pode enfrentar, com estimativas da indústria colocando o custo de substituição de um único médico entre US$500.000 e US$1 milhão.</p>
 
-        <p>Quer saber quanto a autorização prévia custa à sua clínica? Realizamos um diagnóstico gratuito — 30 minutos, seus dados, sem compromisso. <a href="/pt/diagnostico-faturamento/">Agende aqui</a>.</p>
+        <p>Quer saber quanto a autorização prévia custa à sua clínica? Realizamos um diagnóstico gratuito — 30 minutos, seus dados, sem compromisso. <a href="/pt/lp/diagnostico-faturamento/">Agende aqui</a>.</p>
 
         <h2 id="denial-analysis">Por Que 80% das Negações de Autorização Não Deveriam Existir</h2>
 
@@ -360,7 +366,7 @@
             </div>
             <p class="calc-note">Estimativas baseadas em dados AMA 2024 (13h/semana média), Fort HealthCare (15 min economizados/submissão) e MUSC Health (35-45% taxa touchless). Assume 70% de redução (conservador). Seus resultados reais podem variar.</p>
             <div class="calc-cta">
-              <a href="/pt/diagnostico-faturamento/" class="btn-primary">Diagnóstico Gratuito Com Seus Dados Reais <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg></a>
+              <a href="/pt/lp/diagnostico-faturamento/" class="btn-primary">Diagnóstico Gratuito Com Seus Dados Reais <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg></a>
             </div>
           </div>
         </div>
@@ -373,7 +379,7 @@
 
         <p>Esses valores são conservadores porque contabilizam apenas o custo direto de tempo de equipe. Não incluem benefícios indiretos: menos negações (Cleveland Clinic viu 88% menos recursos), aprovações mais rápidas (Fort HealthCare economizou 15 min/submissão), redução de write-offs (Care New England: -55%) e redução de turnover por burnout.</p>
 
-        <p>Pronto para quantificar seus custos de autorização prévia com dados reais? Realizamos uma análise gratuita — 30 minutos, seus números, sem compromisso. <a href="/pt/diagnostico-faturamento/">Agende aqui</a>.</p>
+        <p>Pronto para quantificar seus custos de autorização prévia com dados reais? Realizamos uma análise gratuita — 30 minutos, seus números, sem compromisso. <a href="/pt/lp/diagnostico-faturamento/">Agende aqui</a>.</p>
 
         <h2 id="action-plan">Plano de Ação para Sua Clínica</h2>
 
@@ -383,10 +389,17 @@
           <form class="lead-magnet-form" action="https://formspree.io/f/xreajzel" method="POST">
             <input type="hidden" name="source" value="lead-magnet-pa-starter-pt">
             <input type="hidden" name="_subject" value="Download Kit — Autorização Prévia">
+            <input type="text" name="_gotcha" class="hp-field" tabindex="-1" autocomplete="off">
             <div class="lead-magnet-fields">
               <input type="text" name="name" placeholder="Seu nome" required>
               <input type="email" name="email" placeholder="Email profissional" required>
               <button type="submit" class="btn-primary">Baixar Kit</button>
+            </div>
+            <div class="form-consent">
+              <label>
+                <input type="checkbox" name="privacy_consent" required>
+                Autorizo contato sobre esta solicitação e concordo com a <a href="/pt/privacidade/" target="_blank" rel="noopener noreferrer">Política de Privacidade</a>.
+              </label>
             </div>
           </form>
           <div class="lead-magnet-success">
@@ -465,8 +478,8 @@
           <img src="/assets/logo.svg" alt="Azebra" width="32" height="32">
         </div>
         <div class="author-info">
-          <div class="author-name"><a href="/pt/">Equipe Azebra</a></div>
-          <div class="author-bio">Desenvolvemos soluções customizadas de automação e IA para ciclos de receita na saúde. Com sede nos EUA, atendemos clínicas e sistemas de saúde que querem parar de perder receita com erros administrativos evitáveis.</div>
+          <div class="author-name"><a href="https://www.linkedin.com/in/silvestre-braga/" target="_blank" rel="noopener noreferrer">Silvestre Braga</a></div>
+          <div class="author-bio">Líder de Tecnologia da Azevedo Braga Tech LLC. Desenvolve soluções de automação em saúde para reduzir glosas e custos de faturamento em clínicas e hospitais no Brasil e EUA.</div>
         </div>
       </div>
 
@@ -474,7 +487,7 @@
         <div class="cta-card">
           <h3>Quanto a Autorização Prévia Está Custando à Sua Clínica?</h3>
           <p>Ajudamos clínicas e hospitais a quantificar e reduzir o custo da autorização prévia através de automação direcionada. Sem lock-in de fornecedor, sem plataformas genéricas — apenas o que funciona para o seu ciclo de receita.</p>
-          <a href="/pt/diagnostico-faturamento/" class="btn-primary">Diagnóstico Gratuito de Autorização Prévia <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg></a>
+          <a href="/pt/lp/diagnostico-faturamento/" class="btn-primary">Diagnóstico Gratuito de Autorização Prévia <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg></a>
         </div>
       </aside>
 
@@ -501,7 +514,39 @@
 
   <footer class="footer">
     <div class="container">
-      <div class="footer-bottom">&copy; 2026 Azevedo Braga Tech LLC. Todos os direitos reservados.</div>
+      <div class="footer-grid">
+        <div class="footer-col">
+          <a href="/pt/" class="footer-logo" aria-label="Azebra Home"><img src="/assets/logo.svg" alt="A" class="logo-a" width="20" height="20">zebra</a>
+          <p class="footer-tagline">Automação em saúde para clínicas, hospitais e equipes de faturamento.</p>
+          <a href="https://wa.me/17276373574" target="_blank" rel="noopener noreferrer" class="footer-whatsapp">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 0 1-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 0 1-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 0 1 2.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0 0 12.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 0 0 5.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 0 0-3.48-8.413z"/></svg>
+            +1 (727) 637-3574
+          </a>
+        </div>
+        <div class="footer-col">
+          <h4 class="footer-heading">Serviços</h4>
+          <nav aria-label="Navegação de serviços no rodapé">
+            <a href="/pt/lp/diagnostico-faturamento/">Diagnóstico de Faturamento</a>
+            <a href="/pt/lp/analise-compliance-hospitalar/">Análise de Compliance</a>
+            <a href="/pt/#services">Nossos Serviços</a>
+            <a href="/pt/#contact">Fale Conosco</a>
+          </nav>
+        </div>
+        <div class="footer-col">
+          <h4 class="footer-heading">Artigos Recentes</h4>
+          <nav aria-label="Navegação do blog no rodapé">
+            <a href="/pt/blog/gestao-informacoes-em-saude/">Gestão de Informações em Saúde</a>
+            <a href="/pt/blog/glosas-medicas-automacao-faturamento/">Automação de Glosas</a>
+            <a href="/pt/blog/autorizacao-previa-automacao-medicos/">Autorização Prévia</a>
+            <a href="/pt/blog/ciclo-receita-manual-vs-automatizado/">Ciclo de Receita</a>
+            <a href="/pt/blog/">Ver todos os artigos →</a>
+          </nav>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>&copy; 2026 Azevedo Braga Tech LLC. Todos os direitos reservados.</span>
+        <a href="/blog/" class="lang-switch" title="English version"><img src="https://flagcdn.com/24x18/us.png" srcset="https://flagcdn.com/48x36/us.png 2x" width="24" height="18" alt="English" loading="lazy"></a>
+      </div>
     </div>
   </footer>
 

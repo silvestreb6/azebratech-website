@@ -3,156 +3,294 @@
         xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>https://azebratech.com/</loc>
-    <lastmod>2026-02-25</lastmod>
+    <lastmod>2026-03-02</lastmod>
+    <changefreq>monthly</changefreq>
     <priority>1.0</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://azebratech.com/"/>
     <xhtml:link rel="alternate" hreflang="pt-BR" href="https://azebratech.com/pt/"/>
   </url>
   <url>
     <loc>https://azebratech.com/pt/</loc>
-    <lastmod>2026-02-25</lastmod>
+    <lastmod>2026-03-02</lastmod>
+    <changefreq>monthly</changefreq>
     <priority>1.0</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://azebratech.com/"/>
     <xhtml:link rel="alternate" hreflang="pt-BR" href="https://azebratech.com/pt/"/>
   </url>
   <url>
     <loc>https://azebratech.com/blog/</loc>
-    <lastmod>2026-02-25</lastmod>
+    <lastmod>2026-03-02</lastmod>
+    <changefreq>weekly</changefreq>
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://azebratech.com/blog/"/>
     <xhtml:link rel="alternate" hreflang="pt-BR" href="https://azebratech.com/pt/blog/"/>
   </url>
   <url>
     <loc>https://azebratech.com/pt/blog/</loc>
-    <lastmod>2026-02-25</lastmod>
+    <lastmod>2026-03-02</lastmod>
+    <changefreq>weekly</changefreq>
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://azebratech.com/blog/"/>
     <xhtml:link rel="alternate" hreflang="pt-BR" href="https://azebratech.com/pt/blog/"/>
   </url>
   <url>
     <loc>https://azebratech.com/blog/healthcare-billing-automation-small-practice/</loc>
-    <lastmod>2026-02-25</lastmod>
+    <lastmod>2026-03-02</lastmod>
+    <changefreq>yearly</changefreq>
     <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://azebratech.com/blog/healthcare-billing-automation-small-practice/"/>
     <xhtml:link rel="alternate" hreflang="pt-BR" href="https://azebratech.com/pt/blog/automacao-faturamento-clinica-pequeno-porte/"/>
   </url>
   <url>
     <loc>https://azebratech.com/pt/blog/automacao-faturamento-clinica-pequeno-porte/</loc>
-    <lastmod>2026-02-25</lastmod>
+    <lastmod>2026-03-02</lastmod>
+    <changefreq>yearly</changefreq>
     <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://azebratech.com/blog/healthcare-billing-automation-small-practice/"/>
     <xhtml:link rel="alternate" hreflang="pt-BR" href="https://azebratech.com/pt/blog/automacao-faturamento-clinica-pequeno-porte/"/>
   </url>
   <url>
     <loc>https://azebratech.com/blog/reduce-patient-no-shows-automation/</loc>
-    <lastmod>2026-02-25</lastmod>
+    <lastmod>2026-03-02</lastmod>
+    <changefreq>yearly</changefreq>
     <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://azebratech.com/blog/reduce-patient-no-shows-automation/"/>
     <xhtml:link rel="alternate" hreflang="pt-BR" href="https://azebratech.com/pt/blog/reduzir-faltas-pacientes-automacao-agendamento/"/>
   </url>
   <url>
     <loc>https://azebratech.com/pt/blog/reduzir-faltas-pacientes-automacao-agendamento/</loc>
-    <lastmod>2026-02-25</lastmod>
+    <lastmod>2026-03-02</lastmod>
+    <changefreq>yearly</changefreq>
     <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://azebratech.com/blog/reduce-patient-no-shows-automation/"/>
     <xhtml:link rel="alternate" hreflang="pt-BR" href="https://azebratech.com/pt/blog/reduzir-faltas-pacientes-automacao-agendamento/"/>
   </url>
   <url>
     <loc>https://azebratech.com/blog/healthcare-ai-automation-roi/</loc>
-    <lastmod>2026-02-25</lastmod>
+    <lastmod>2026-03-02</lastmod>
+    <changefreq>yearly</changefreq>
     <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://azebratech.com/blog/healthcare-ai-automation-roi/"/>
     <xhtml:link rel="alternate" hreflang="pt-BR" href="https://azebratech.com/pt/blog/roi-automacao-ia-saude/"/>
   </url>
   <url>
     <loc>https://azebratech.com/pt/blog/roi-automacao-ia-saude/</loc>
-    <lastmod>2026-02-25</lastmod>
+    <lastmod>2026-03-02</lastmod>
+    <changefreq>yearly</changefreq>
     <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://azebratech.com/blog/healthcare-ai-automation-roi/"/>
     <xhtml:link rel="alternate" hreflang="pt-BR" href="https://azebratech.com/pt/blog/roi-automacao-ia-saude/"/>
   </url>
   <url>
     <loc>https://azebratech.com/blog/healthcare-admin-crisis-automation/</loc>
-    <lastmod>2026-02-25</lastmod>
+    <lastmod>2026-03-02</lastmod>
+    <changefreq>yearly</changefreq>
     <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://azebratech.com/blog/healthcare-admin-crisis-automation/"/>
     <xhtml:link rel="alternate" hreflang="pt-BR" href="https://azebratech.com/pt/blog/crise-administrativa-saude-automacao/"/>
   </url>
   <url>
     <loc>https://azebratech.com/pt/blog/crise-administrativa-saude-automacao/</loc>
-    <lastmod>2026-02-25</lastmod>
+    <lastmod>2026-03-02</lastmod>
+    <changefreq>yearly</changefreq>
     <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://azebratech.com/blog/healthcare-admin-crisis-automation/"/>
     <xhtml:link rel="alternate" hreflang="pt-BR" href="https://azebratech.com/pt/blog/crise-administrativa-saude-automacao/"/>
   </url>
   <url>
     <loc>https://azebratech.com/blog/healthcare-claim-denial-automation/</loc>
-    <lastmod>2026-02-28</lastmod>
+    <lastmod>2026-03-02</lastmod>
+    <changefreq>yearly</changefreq>
     <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://azebratech.com/blog/healthcare-claim-denial-automation/"/>
     <xhtml:link rel="alternate" hreflang="pt-BR" href="https://azebratech.com/pt/blog/glosas-medicas-automacao-faturamento/"/>
   </url>
   <url>
     <loc>https://azebratech.com/pt/blog/glosas-medicas-automacao-faturamento/</loc>
-    <lastmod>2026-02-28</lastmod>
+    <lastmod>2026-03-02</lastmod>
+    <changefreq>yearly</changefreq>
     <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://azebratech.com/blog/healthcare-claim-denial-automation/"/>
     <xhtml:link rel="alternate" hreflang="pt-BR" href="https://azebratech.com/pt/blog/glosas-medicas-automacao-faturamento/"/>
   </url>
   <url>
     <loc>https://azebratech.com/blog/healthcare-process-automation-results/</loc>
-    <lastmod>2026-02-26</lastmod>
+    <lastmod>2026-03-02</lastmod>
+    <changefreq>yearly</changefreq>
     <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://azebratech.com/blog/healthcare-process-automation-results/"/>
     <xhtml:link rel="alternate" hreflang="pt-BR" href="https://azebratech.com/pt/blog/automacao-processos-saude-resultados/"/>
   </url>
   <url>
     <loc>https://azebratech.com/pt/blog/automacao-processos-saude-resultados/</loc>
-    <lastmod>2026-02-26</lastmod>
+    <lastmod>2026-03-02</lastmod>
+    <changefreq>yearly</changefreq>
     <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://azebratech.com/blog/healthcare-process-automation-results/"/>
     <xhtml:link rel="alternate" hreflang="pt-BR" href="https://azebratech.com/pt/blog/automacao-processos-saude-resultados/"/>
   </url>
   <url>
     <loc>https://azebratech.com/blog/manual-vs-automated-revenue-cycle/</loc>
-    <lastmod>2026-03-01</lastmod>
+    <lastmod>2026-03-02</lastmod>
+    <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://azebratech.com/blog/manual-vs-automated-revenue-cycle/"/>
     <xhtml:link rel="alternate" hreflang="pt-BR" href="https://azebratech.com/pt/blog/ciclo-receita-manual-vs-automatizado/"/>
   </url>
   <url>
     <loc>https://azebratech.com/pt/blog/ciclo-receita-manual-vs-automatizado/</loc>
-    <lastmod>2026-03-01</lastmod>
+    <lastmod>2026-03-02</lastmod>
+    <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://azebratech.com/blog/manual-vs-automated-revenue-cycle/"/>
     <xhtml:link rel="alternate" hreflang="pt-BR" href="https://azebratech.com/pt/blog/ciclo-receita-manual-vs-automatizado/"/>
   </url>
   <url>
     <loc>https://azebratech.com/blog/prior-authorization-automation-physicians/</loc>
-    <lastmod>2026-03-01</lastmod>
+    <lastmod>2026-03-02</lastmod>
+    <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://azebratech.com/blog/prior-authorization-automation-physicians/"/>
     <xhtml:link rel="alternate" hreflang="pt-BR" href="https://azebratech.com/pt/blog/autorizacao-previa-automacao-medicos/"/>
   </url>
   <url>
     <loc>https://azebratech.com/pt/blog/autorizacao-previa-automacao-medicos/</loc>
-    <lastmod>2026-03-01</lastmod>
+    <lastmod>2026-03-02</lastmod>
+    <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://azebratech.com/blog/prior-authorization-automation-physicians/"/>
     <xhtml:link rel="alternate" hreflang="pt-BR" href="https://azebratech.com/pt/blog/autorizacao-previa-automacao-medicos/"/>
   </url>
   <url>
-    <loc>https://azebratech.com/denial-analysis/</loc>
-    <lastmod>2026-02-28</lastmod>
+    <loc>https://azebratech.com/lp/denial-analysis/</loc>
+    <lastmod>2026-03-02</lastmod>
+    <changefreq>monthly</changefreq>
     <priority>0.9</priority>
-    <xhtml:link rel="alternate" hreflang="en" href="https://azebratech.com/denial-analysis/"/>
-    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://azebratech.com/pt/diagnostico-faturamento/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://azebratech.com/lp/denial-analysis/"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://azebratech.com/pt/lp/diagnostico-faturamento/"/>
   </url>
   <url>
-    <loc>https://azebratech.com/pt/diagnostico-faturamento/</loc>
-    <lastmod>2026-02-28</lastmod>
+    <loc>https://azebratech.com/pt/lp/diagnostico-faturamento/</loc>
+    <lastmod>2026-03-02</lastmod>
+    <changefreq>monthly</changefreq>
     <priority>0.9</priority>
-    <xhtml:link rel="alternate" hreflang="en" href="https://azebratech.com/denial-analysis/"/>
-    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://azebratech.com/pt/diagnostico-faturamento/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://azebratech.com/lp/denial-analysis/"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://azebratech.com/pt/lp/diagnostico-faturamento/"/>
+  </url>
+
+  <!-- Compliance Management System (EN + PT-BR) -->
+  <url>
+    <loc>https://azebratech.com/blog/healthcare-compliance-management-system/</loc>
+    <lastmod>2026-03-02</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://azebratech.com/blog/healthcare-compliance-management-system/"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://azebratech.com/pt/blog/plataforma-gestao-compliance-saude/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://azebratech.com/blog/healthcare-compliance-management-system/"/>
+  </url>
+  <url>
+    <loc>https://azebratech.com/pt/blog/plataforma-gestao-compliance-saude/</loc>
+    <lastmod>2026-03-02</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://azebratech.com/blog/healthcare-compliance-management-system/"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://azebratech.com/pt/blog/plataforma-gestao-compliance-saude/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://azebratech.com/blog/healthcare-compliance-management-system/"/>
+  </url>
+
+  <!-- Claims Management Services (EN + PT-BR) -->
+  <url>
+    <loc>https://azebratech.com/blog/claims-management-services-healthcare/</loc>
+    <lastmod>2026-03-02</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://azebratech.com/blog/claims-management-services-healthcare/"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://azebratech.com/pt/blog/servicos-gestao-contas-medicas/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://azebratech.com/blog/claims-management-services-healthcare/"/>
+  </url>
+  <url>
+    <loc>https://azebratech.com/pt/blog/servicos-gestao-contas-medicas/</loc>
+    <lastmod>2026-03-02</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://azebratech.com/blog/claims-management-services-healthcare/"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://azebratech.com/pt/blog/servicos-gestao-contas-medicas/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://azebratech.com/blog/claims-management-services-healthcare/"/>
+  </url>
+
+  <!-- Healthcare Information Management — Systems (EN + PT-BR) -->
+  <url>
+    <loc>https://azebratech.com/blog/healthcare-information-management/</loc>
+    <lastmod>2026-03-02</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://azebratech.com/blog/healthcare-information-management/"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://azebratech.com/pt/blog/gestao-informacoes-em-saude/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://azebratech.com/blog/healthcare-information-management/"/>
+  </url>
+  <url>
+    <loc>https://azebratech.com/pt/blog/gestao-informacoes-em-saude/</loc>
+    <lastmod>2026-03-02</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://azebratech.com/blog/healthcare-information-management/"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://azebratech.com/pt/blog/gestao-informacoes-em-saude/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://azebratech.com/blog/healthcare-information-management/"/>
+  </url>
+
+  <!-- Health Information Management — Governance (EN + PT-BR) -->
+  <url>
+    <loc>https://azebratech.com/blog/health-information-management/</loc>
+    <lastmod>2026-03-02</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://azebratech.com/blog/health-information-management/"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://azebratech.com/pt/blog/governanca-informacao-saude/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://azebratech.com/blog/health-information-management/"/>
+  </url>
+  <url>
+    <loc>https://azebratech.com/pt/blog/governanca-informacao-saude/</loc>
+    <lastmod>2026-03-02</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://azebratech.com/blog/health-information-management/"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://azebratech.com/pt/blog/governanca-informacao-saude/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://azebratech.com/blog/health-information-management/"/>
+  </url>
+
+  <!-- Compliance Gap Analysis CTA (EN + PT-BR) -->
+  <url>
+    <loc>https://azebratech.com/lp/compliance-gap-analysis/</loc>
+    <lastmod>2026-03-02</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://azebratech.com/lp/compliance-gap-analysis/"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://azebratech.com/pt/lp/analise-compliance-hospitalar/"/>
+  </url>
+  <url>
+    <loc>https://azebratech.com/pt/lp/analise-compliance-hospitalar/</loc>
+    <lastmod>2026-03-02</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://azebratech.com/lp/compliance-gap-analysis/"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://azebratech.com/pt/lp/analise-compliance-hospitalar/"/>
+  </url>
+  <url>
+    <loc>https://azebratech.com/privacy/</loc>
+    <lastmod>2026-03-02</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.3</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://azebratech.com/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://azebratech.com/pt/privacidade/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://azebratech.com/privacy/"/>
+  </url>
+  <url>
+    <loc>https://azebratech.com/pt/privacidade/</loc>
+    <lastmod>2026-03-02</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.3</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://azebratech.com/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://azebratech.com/pt/privacidade/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://azebratech.com/privacy/"/>
   </url>
 </urlset>

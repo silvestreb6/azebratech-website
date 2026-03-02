@@ -196,32 +196,50 @@ function initContactForm() {
   const form = document.getElementById('contact-form');
   if (!form) return;
 
-  form.addEventListener('submit', (e) => {
+  form.addEventListener('submit', async (e) => {
     e.preventDefault();
 
     const btn = form.querySelector('.btn-submit');
+    const isPt = document.documentElement.lang.startsWith('pt');
     const data = new FormData(form);
 
-    fetch(form.action, {
-      method: 'POST',
-      body: data,
-      headers: { 'Accept': 'application/json' }
-    })
-    .then(response => {
-      if (response.ok) {
-        form.reset();
+    // Quietly ignore obvious bot submissions.
+    if (String(data.get('_gotcha') || '').trim() !== '') {
+      form.reset();
+      return;
+    }
+
+    if (btn) {
+      btn.disabled = true;
+      btn.classList.remove('success');
+    }
+
+    try {
+      const response = await fetch(form.action, {
+        method: 'POST',
+        body: data,
+        headers: { 'Accept': 'application/json' }
+      });
+
+      if (!response.ok) {
+        throw new Error(`Form submission failed with status ${response.status}`);
+      }
+
+      form.reset();
+      if (btn) {
         btn.classList.add('success');
         setTimeout(() => {
           btn.classList.remove('success');
         }, 3000);
       }
-    })
-    .catch(() => {
-      const msg = document.documentElement.lang.startsWith('pt')
-        ? 'Algo deu errado. Por favor, tente novamente.'
-        : 'Something went wrong. Please try again.';
+    } catch {
+      const msg = isPt
+        ? 'Nao foi possivel enviar agora. Verifique os dados e tente novamente em instantes.'
+        : 'We could not submit your request right now. Please review your details and try again shortly.';
       alert(msg);
-    });
+    } finally {
+      if (btn) btn.disabled = false;
+    }
   });
 }
 
@@ -229,7 +247,10 @@ function initContactForm() {
 function initLangSwitcher() {
   document.querySelectorAll('.lang-switch').forEach(link => {
     link.addEventListener('click', () => {
-      localStorage.setItem('azebra-lang', link.getAttribute('href') === '/pt/' ? 'pt' : 'en');
+      const href = link.getAttribute('href') || '';
+      const targetPath = new URL(href, window.location.origin).pathname;
+      const lang = targetPath.startsWith('/pt') ? 'pt' : 'en';
+      localStorage.setItem('azebra-lang', lang);
     });
   });
 }

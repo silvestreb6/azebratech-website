@@ -4,6 +4,10 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+  <!-- Resource hints for third-party origins -->
+  <link rel="preconnect" href="https://www.googletagmanager.com">
+  <link rel="dns-prefetch" href="https://www.google-analytics.com">
+  <link rel="dns-prefetch" href="https://flagcdn.com">
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-3CKLBMHQVT"></script>
   <script>
     window.dataLayer = window.dataLayer || [];
@@ -26,7 +30,6 @@
   <meta property="og:type" content="article">
   <meta property="og:url" content="https://azebratech.com/pt/blog/glosas-medicas-automacao-faturamento/">
   <meta property="og:site_name" content="Azebra">
-
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="O Custo Real das Glosas: R$5,8 Bilhões Perdidos em 2024">
   <meta name="twitter:description" content="Hospitais brasileiros perderam R$5,8 bi em glosas em 2024. OhioHealth cortou negações em 42% com automação. Veja os dados e o plano de ação.">
@@ -34,7 +37,8 @@
   <link rel="icon" href="/assets/favicon.svg" type="image/svg+xml">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" onload="this.onload=null;this.rel='stylesheet'">
+  <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"></noscript>
   <link rel="stylesheet" href="/css/styles.css">
   <link rel="stylesheet" href="/css/blog.css">
 
@@ -47,7 +51,7 @@
     "url": "https://azebratech.com/pt/blog/glosas-medicas-automacao-faturamento/",
     "datePublished": "2026-02-28",
     "dateModified": "2026-02-28",
-    "author": {"@type": "Organization", "name": "Azebra", "url": "https://azebratech.com"},
+    "author": {"@type": "Person", "name": "Silvestre Braga", "url": "https://www.linkedin.com/in/silvestre-braga/", "sameAs": ["https://www.linkedin.com/in/silvestre-braga/"]},
     "publisher": {"@type": "Organization", "name": "Azevedo Braga Tech LLC", "url": "https://azebratech.com", "logo": {"@type": "ImageObject", "url": "https://azebratech.com/assets/logo.svg"}},
     "mainEntityOfPage": {"@type": "WebPage", "@id": "https://azebratech.com/pt/blog/glosas-medicas-automacao-faturamento/"},
     "inLanguage": "pt-BR",
@@ -207,7 +211,7 @@
 
         <p><strong>4. Autorização prévia ausente ou incompleta.</strong> Procedimentos que exigem autorização prévia da operadora — especialmente SADT (Serviço Auxiliar de Diagnóstico e Terapia) e procedimentos cirúrgicos — são glosados integralmente quando executados sem a devida autorização. A RN 259 da ANS estabelece prazos para resposta das operadoras, mas o processo de solicitação é manual na maioria das clínicas: preenchimento de guias em portais específicos de cada operadora (Unimed, Bradesco Saúde, SulAmérica, Amil), anexação de laudos e justificativas, e acompanhamento de status. Procedimentos realizados fora do rol da ANS sem autorização prévia documentada são glosados sistematicamente.</p>
 
-        <p><strong>5. Documentação clínica insuficiente.</strong> A justificativa de necessidade médica é requisito para diversos procedimentos, especialmente os de maior custo. Quando o prontuário não contém documentação suficiente para justificar a indicação clínica do procedimento — ou quando essa documentação não é anexada à guia enviada à operadora — a glosa técnica é aplicada. É a causa-raiz mais difícil de resolver sem mudança de processo, porque depende da interface entre equipe clínica e equipe de faturamento.</p>
+        <p><strong>5. Documentação clínica insuficiente.</strong> A justificativa de necessidade médica é requisito para diversos procedimentos, especialmente os de maior custo. Quando o prontuário não contém documentação suficiente para justificar a indicação clínica do procedimento — ou quando essa documentação não é anexada à guia enviada à operadora — a glosa técnica é aplicada. É a causa-raiz mais difícil de resolver sem mudança de processo, porque depende da interface entre equipe clínica e equipe de faturamento. Para um guia completo sobre como a Melhoria da Documentação Clínica (MDC), codificação CID-10/TUSS e governança de prontuários funcionam como sistema integrado, veja nosso artigo sobre <a href="/pt/blog/governanca-informacao-saude/">governança da informação em saúde</a>.</p>
 
         <h2 id="custo-oculto">O Custo Oculto Que a Maioria das Clínicas Ignora</h2>
 
@@ -227,7 +231,7 @@
 
         <p>O dado norte-americano do AHIMA Journal adiciona uma dimensão crítica: entre <strong>35% e 60% dos claims negados nunca são resubmetidos</strong>. Não por falta de mérito, mas por falta de capacidade operacional. A equipe simplesmente não consegue processar o volume de recursos necessários. É razoável supor que dinâmica semelhante ocorra no Brasil, onde equipes de faturamento frequentemente acumulam funções e operam com ferramentas limitadas.</p>
 
-        <p class="article-cta-inline">Quer quantificar o custo real das glosas na sua organização? Realizamos um diagnóstico de faturamento gratuito de 30 minutos — com dados, não com suposições. <a href="/pt/diagnostico-faturamento/">Agende aqui</a>.</p>
+        <p class="article-cta-inline">Quer quantificar o custo real das glosas na sua organização? Realizamos um diagnóstico de faturamento gratuito de 30 minutos — com dados, não com suposições. <a href="/pt/lp/diagnostico-faturamento/">Agende aqui</a>.</p>
 
         <h2 id="caso-ohiohealth">Como o OhioHealth Reduziu Negações em 42%</h2>
 
@@ -261,7 +265,7 @@
 
         <p><strong>5. Tracking de glosas e recurso automatizado com dashboard e templates.</strong> Um painel centralizado que consolida todas as glosas recebidas, classifica por tipo (administrativa, técnica, linear), operadora e causa-raiz, e aciona workflows automatizados de recurso com templates pré-configurados para cada tipo de glosa. O dado da Anahp — 98% das glosas revertidas após recurso — demonstra que o problema não é falta de mérito, mas falta de processo sistematizado. A automação do fluxo de recurso transforma o que hoje é uma atividade reativa e desorganizada em um processo proativo e mensurável. Para um comparativo completo entre processos manuais e automatizados no ciclo de receita, veja nosso artigo sobre <a href="/pt/blog/ciclo-receita-manual-vs-automatizado/">ciclo de receita manual vs. automatizado</a> com benchmarks, calculadora de ROI e roadmap de implementação.</p>
 
-        <p class="article-cta-inline">Precisa priorizar quais automações implementar primeiro? Nossa equipe analisa seu fluxo de faturamento e identifica onde a automação gera maior retorno para o seu perfil de glosas. <a href="/pt/diagnostico-faturamento/">Comece aqui</a>.</p>
+        <p class="article-cta-inline">Precisa priorizar quais automações implementar primeiro? Nossa equipe analisa seu fluxo de faturamento e identifica onde a automação gera maior retorno para o seu perfil de glosas. <a href="/pt/lp/diagnostico-faturamento/">Comece aqui</a>.</p>
 
         <div class="lead-magnet-card">
           <h3>Grátis: Checklist de Prevenção de Glosas</h3>
@@ -269,10 +273,17 @@
           <form class="lead-magnet-form" action="https://formspree.io/f/xreajzel" method="POST">
             <input type="hidden" name="source" value="lead-magnet-checklist-pt">
             <input type="hidden" name="_subject" value="Download Checklist — Prevenção de Glosas">
+            <input type="text" name="_gotcha" class="hp-field" tabindex="-1" autocomplete="off">
             <div class="lead-magnet-fields">
               <input type="text" name="name" placeholder="Seu nome" required>
               <input type="email" name="email" placeholder="E-mail profissional" required>
               <button type="submit" class="btn-primary">Baixar Checklist</button>
+            </div>
+            <div class="form-consent">
+              <label>
+                <input type="checkbox" name="privacy_consent" required>
+                Autorizo contato sobre esta solicitação e concordo com a <a href="/pt/privacidade/" target="_blank" rel="noopener noreferrer">Política de Privacidade</a>.
+              </label>
             </div>
           </form>
           <div class="lead-magnet-success">
@@ -317,7 +328,7 @@
             </div>
             <p class="calc-note">Estimativas baseadas em dados Anahp (15,89% glosas), OhioHealth (-42% negações) e pesquisas setoriais. Resultados reais variam conforme perfil da organização.</p>
             <div class="calc-cta">
-              <a href="/pt/diagnostico-faturamento/" class="btn-primary">Diagnóstico Gratuito Com Seus Dados Reais <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg></a>
+              <a href="/pt/lp/diagnostico-faturamento/" class="btn-primary">Diagnóstico Gratuito Com Seus Dados Reais <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg></a>
             </div>
           </div>
         </div>
@@ -418,8 +429,8 @@
           <img src="/assets/logo.svg" alt="Azebra" width="32" height="32">
         </div>
         <div class="author-info">
-          <div class="author-name"><a href="/pt/">Equipe Azebra</a></div>
-          <div class="author-bio">Desenvolvemos soluções de automação e IA para o ciclo de receita em saúde. Com sede nos EUA, atendemos clínicas e sistemas de saúde que buscam eliminar perdas com glosas preveníveis.</div>
+          <div class="author-name"><a href="https://www.linkedin.com/in/silvestre-braga/" target="_blank" rel="noopener noreferrer">Silvestre Braga</a></div>
+          <div class="author-bio">Líder de Tecnologia da Azevedo Braga Tech LLC. Desenvolve soluções de automação em saúde para reduzir glosas e custos de faturamento em clínicas e hospitais no Brasil e EUA.</div>
         </div>
       </div>
 
@@ -427,7 +438,7 @@
         <div class="cta-card">
           <h3>Quanto Sua Clínica Está Perdendo com Glosas?</h3>
           <p>Ajudamos organizações de saúde a identificar, prevenir e recuperar glosas através de automação direcionada. Sem lock-in, sem plataformas genéricas — apenas o que funciona para seu ciclo de receita.</p>
-          <a href="/pt/diagnostico-faturamento/" class="btn-primary">Agende um Diagnóstico de Faturamento <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg></a>
+          <a href="/pt/lp/diagnostico-faturamento/" class="btn-primary">Agende um Diagnóstico de Faturamento <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg></a>
         </div>
       </aside>
 
@@ -454,7 +465,39 @@
 
   <footer class="footer">
     <div class="container">
-      <div class="footer-bottom">&copy; 2026 Azevedo Braga Tech LLC. Todos os direitos reservados.</div>
+      <div class="footer-grid">
+        <div class="footer-col">
+          <a href="/pt/" class="footer-logo" aria-label="Azebra Home"><img src="/assets/logo.svg" alt="A" class="logo-a" width="20" height="20">zebra</a>
+          <p class="footer-tagline">Automação em saúde para clínicas, hospitais e equipes de faturamento.</p>
+          <a href="https://wa.me/17276373574" target="_blank" rel="noopener noreferrer" class="footer-whatsapp">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 0 1-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 0 1-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 0 1 2.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0 0 12.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 0 0 5.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 0 0-3.48-8.413z"/></svg>
+            +1 (727) 637-3574
+          </a>
+        </div>
+        <div class="footer-col">
+          <h4 class="footer-heading">Serviços</h4>
+          <nav aria-label="Navegação de serviços no rodapé">
+            <a href="/pt/lp/diagnostico-faturamento/">Diagnóstico de Faturamento</a>
+            <a href="/pt/lp/analise-compliance-hospitalar/">Análise de Compliance</a>
+            <a href="/pt/#services">Nossos Serviços</a>
+            <a href="/pt/#contact">Fale Conosco</a>
+          </nav>
+        </div>
+        <div class="footer-col">
+          <h4 class="footer-heading">Artigos Recentes</h4>
+          <nav aria-label="Navegação do blog no rodapé">
+            <a href="/pt/blog/gestao-informacoes-em-saude/">Gestão de Informações em Saúde</a>
+            <a href="/pt/blog/glosas-medicas-automacao-faturamento/">Automação de Glosas</a>
+            <a href="/pt/blog/autorizacao-previa-automacao-medicos/">Autorização Prévia</a>
+            <a href="/pt/blog/ciclo-receita-manual-vs-automatizado/">Ciclo de Receita</a>
+            <a href="/pt/blog/">Ver todos os artigos →</a>
+          </nav>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>&copy; 2026 Azevedo Braga Tech LLC. Todos os direitos reservados.</span>
+        <a href="/blog/" class="lang-switch" title="English version"><img src="https://flagcdn.com/24x18/us.png" srcset="https://flagcdn.com/48x36/us.png 2x" width="24" height="18" alt="English" loading="lazy"></a>
+      </div>
     </div>
   </footer>
 
