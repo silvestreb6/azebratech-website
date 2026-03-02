@@ -810,83 +810,22 @@ button {
    FOOTER
    ============================================ */
 .footer {
-  padding: 0;
+  padding: 20px 0;
   border-top: 1px solid var(--border-subtle);
 }
 
-/* Footer Navigation Grid */
 .footer-grid {
-  display: grid;
-  grid-template-columns: 2fr 1fr 1fr;
-  gap: 48px;
-  padding: 48px 0 32px;
-  border-bottom: 1px solid var(--border-subtle);
+  display: none;
 }
-
-.footer-logo {
-  display: inline-flex;
-  align-items: center;
-  gap: 2px;
-  font-size: 1.2rem;
-  font-weight: 700;
-  color: var(--text-primary);
-  text-decoration: none;
-  margin-bottom: 12px;
-}
-
-.footer-logo img { width: 20px; height: 20px; }
-
-.footer-tagline {
-  font-size: 0.85rem;
-  color: var(--text-secondary);
-  line-height: 1.5;
-  margin-bottom: 16px;
-  max-width: 240px;
-}
-
-.footer-whatsapp {
-  display: inline-flex;
-  align-items: center;
-  gap: 8px;
-  font-size: 0.85rem;
-  color: #25d366;
-  text-decoration: none;
-  transition: opacity var(--transition);
-}
-.footer-whatsapp:hover { opacity: 0.8; }
-
-.footer-heading {
-  font-size: 0.75rem;
-  font-weight: 600;
-  text-transform: uppercase;
-  letter-spacing: 0.08em;
-  color: var(--text-secondary);
-  margin-bottom: 16px;
-}
-
-.footer-col nav {
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
-}
-
-.footer-col nav a {
-  font-size: 0.875rem;
-  color: var(--text-secondary);
-  text-decoration: none;
-  transition: color var(--transition);
-  line-height: 1.4;
-}
-.footer-col nav a:hover { color: var(--accent-cyan); }
 
 .footer-bottom {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 20px 0;
+  text-align: center;
   font-size: 0.8rem;
   color: var(--text-secondary);
-  text-align: left;
+}
+
+.footer-bottom .lang-switch {
+  display: none;
 }
 
 /* ---------- Language Switcher ---------- */
@@ -985,24 +924,6 @@ button {
   }
 
   .footer-bottom {
-    flex-direction: column;
-    gap: 12px;
     text-align: center;
-  }
-
-  .footer-grid {
-    grid-template-columns: 1fr 1fr;
-    gap: 32px;
-    padding: 32px 0 24px;
-  }
-
-  .footer-col:first-child {
-    grid-column: 1 / -1;
-  }
-}
-
-@media (max-width: 480px) {
-  .footer-grid {
-    grid-template-columns: 1fr;
   }
 }
