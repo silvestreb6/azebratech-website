@@ -914,6 +914,55 @@
   flex-shrink: 0;
 }
 
+/* ---------- Comparison Table ---------- */
+.comparison-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.92rem;
+  margin: 32px 0;
+}
+
+.comparison-table thead th {
+  padding: 14px 16px;
+  text-align: left;
+  font-weight: 700;
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: var(--accent-cyan);
+  background: rgba(0, 212, 255, 0.06);
+  border-bottom: 2px solid rgba(0, 212, 255, 0.2);
+}
+
+.comparison-table tbody td {
+  padding: 14px 16px;
+  border-bottom: 1px solid var(--border-subtle);
+  color: var(--text-primary);
+  line-height: 1.5;
+}
+
+.comparison-table tbody tr:hover {
+  background: rgba(0, 212, 255, 0.03);
+}
+
+.comparison-table tbody td:first-child {
+  font-weight: 600;
+  color: var(--text-primary);
+}
+
+.comparison-table tbody td:nth-child(2) {
+  color: var(--accent-magenta);
+}
+
+.comparison-table tbody td:nth-child(3) {
+  color: var(--accent-cyan);
+}
+
+.comparison-table tbody td:last-child {
+  font-size: 0.8rem;
+  color: var(--text-secondary);
+}
+
 /* ---------- Blog Responsive ---------- */
 @media (max-width: 768px) {
   .blog-grid {
@@ -991,5 +1040,14 @@
 
   .landing-form-section .contact-form {
     padding: 28px 20px;
+  }
+
+  .comparison-table {
+    font-size: 0.82rem;
+  }
+
+  .comparison-table thead th,
+  .comparison-table tbody td {
+    padding: 10px 12px;
   }
 }

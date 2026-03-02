@@ -89,6 +89,106 @@
     return num.toLocaleString('en-US', { maximumFractionDigits: 0 });
   }
 
+  // --- RCM ROI Calculator ---
+  document.querySelectorAll('.rcm-calculator').forEach(function (calc) {
+    var btn = calc.querySelector('.calc-btn');
+    var results = calc.querySelector('.calc-results');
+    if (!btn || !results) return;
+
+    btn.addEventListener('click', function () {
+      var lang = document.documentElement.lang;
+      var isPT = lang === 'pt-BR';
+
+      var input1 = calc.querySelector('[data-calc="claims"]');
+      var input2 = calc.querySelector('[data-calc="avg-value"]');
+      var input3 = calc.querySelector('[data-calc="cost-to-collect"]');
+
+      var claims = parseFloat(input1.value);
+      var avgValue = parseFloat(input2.value);
+      var costToCollect = parseFloat(input3.value);
+
+      if (!claims || !avgValue || !costToCollect || claims <= 0 || avgValue <= 0 || costToCollect <= 0) {
+        input1.style.borderColor = claims > 0 ? '' : 'var(--accent-magenta)';
+        input2.style.borderColor = avgValue > 0 ? '' : 'var(--accent-magenta)';
+        input3.style.borderColor = costToCollect > 0 ? '' : 'var(--accent-magenta)';
+        return;
+      }
+
+      input1.style.borderColor = '';
+      input2.style.borderColor = '';
+      input3.style.borderColor = '';
+
+      var annualRevenue = claims * avgValue * 12;
+      var currentCost = annualRevenue * (costToCollect / 100);
+      var automatedCost = currentCost * 0.60; // 40% reduction (conservative from McKinsey 30-60%)
+      var annualSavings = currentCost - automatedCost;
+
+      var currency = isPT ? 'R$' : '$';
+      results.querySelector('[data-result="cost"]').textContent = currency + formatNumber(currentCost);
+      results.querySelector('[data-result="savings"]').textContent = currency + formatNumber(annualSavings);
+
+      results.classList.add('visible');
+      results.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+
+      if (typeof gtag === 'function') {
+        gtag('event', 'calculator_used', {
+          event_category: 'engagement',
+          event_label: isPT ? 'rcm-calculator-pt' : 'rcm-calculator',
+          value: Math.round(annualSavings)
+        });
+      }
+    });
+  });
+
+  // --- PA Cost Calculator ---
+  document.querySelectorAll('.pa-calculator').forEach(function (calc) {
+    var btn = calc.querySelector('.calc-btn');
+    var results = calc.querySelector('.calc-results');
+    if (!btn || !results) return;
+
+    btn.addEventListener('click', function () {
+      var lang = document.documentElement.lang;
+      var isPT = lang === 'pt-BR';
+
+      var input1 = calc.querySelector('[data-calc="physicians"]');
+      var input2 = calc.querySelector('[data-calc="staff-cost"]');
+      var input3 = calc.querySelector('[data-calc="pa-hours"]');
+
+      var physicians = parseFloat(input1.value);
+      var staffCost = parseFloat(input2.value);
+      var paHours = parseFloat(input3.value);
+
+      if (!physicians || !staffCost || !paHours || physicians <= 0 || staffCost <= 0 || paHours <= 0) {
+        input1.style.borderColor = physicians > 0 ? '' : 'var(--accent-magenta)';
+        input2.style.borderColor = staffCost > 0 ? '' : 'var(--accent-magenta)';
+        input3.style.borderColor = paHours > 0 ? '' : 'var(--accent-magenta)';
+        return;
+      }
+
+      input1.style.borderColor = '';
+      input2.style.borderColor = '';
+      input3.style.borderColor = '';
+
+      var annualPACost = physicians * paHours * staffCost * 52;
+      var annualSavings = annualPACost * 0.70; // 70% reduction based on case studies
+
+      var currency = isPT ? 'R$' : '$';
+      results.querySelector('[data-result="cost"]').textContent = currency + formatNumber(annualPACost);
+      results.querySelector('[data-result="savings"]').textContent = currency + formatNumber(annualSavings);
+
+      results.classList.add('visible');
+      results.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+
+      if (typeof gtag === 'function') {
+        gtag('event', 'calculator_used', {
+          event_category: 'engagement',
+          event_label: isPT ? 'pa-calculator-pt' : 'pa-calculator',
+          value: Math.round(annualSavings)
+        });
+      }
+    });
+  });
+
   // --- Lead Magnet Form ---
   document.querySelectorAll('.lead-magnet-form').forEach(function (form) {
     form.addEventListener('submit', function (e) {
