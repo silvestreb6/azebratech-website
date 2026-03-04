@@ -26,8 +26,16 @@
   <link rel="alternate" hreflang="pt-BR" href="https://azebratech.com/pt/">
   <link rel="alternate" hreflang="x-default" href="https://azebratech.com/">
 
-  <!-- Redirect PT-BR users -->
-  <script src="js/i18n-redirect.js"></script>
+  <!-- Redirect PT-BR users (inlined to avoid render-blocking external request) -->
+  <script>
+  (function(){
+    if(window.location.hostname!=='azebratech.com')return;
+    if(localStorage.getItem('azebra-lang'))return;
+    var l=(navigator.language||navigator.userLanguage||'').toLowerCase();
+    if(l.startsWith('pt')){window.location.replace('/pt/');return}
+    fetch('https://ipapi.co/country_code/').then(function(r){return r.text()}).then(function(c){c=(c||'').trim();if(c==='BR')window.location.replace('/pt/')}).catch(function(){});
+  })();
+  </script>
 
   <!-- Open Graph -->
   <meta property="og:title" content="Healthcare Automation & AI Solutions | Azebra">
@@ -115,6 +123,8 @@
       </button>
     </div>
   </nav>
+
+  <main>
 
   <!-- ========== HERO ========== -->
   <section class="hero" id="hero">
@@ -299,6 +309,8 @@
       </div>
     </div>
   </section>
+
+  </main>
 
   <!-- ========== FOOTER ========== -->
   <footer class="footer">

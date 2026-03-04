@@ -65,8 +65,10 @@ function initParticles() {
     }
   }
 
-  // Adjust particle count based on screen size
-  const count = Math.min(80, Math.floor((canvas.width * canvas.height) / 15000));
+  // Adjust particle count based on screen size; fewer on mobile
+  const isMobile = canvas.width < 768;
+  const maxParticles = isMobile ? 25 : 80;
+  const count = Math.min(maxParticles, Math.floor((canvas.width * canvas.height) / 15000));
   for (let i = 0; i < count; i++) {
     particles.push(new Particle());
   }
@@ -100,7 +102,8 @@ function initParticles() {
       p.draw();
     });
 
-    connectParticles();
+    // Skip expensive O(n²) line connections on mobile
+    if (!isMobile) connectParticles();
     animationId = requestAnimationFrame(animate);
   }
 
