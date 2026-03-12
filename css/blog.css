@@ -922,6 +922,16 @@
   margin: 32px 0;
 }
 
+.comparison-table caption {
+  caption-side: top;
+  text-align: left;
+  font-size: 0.82rem;
+  font-weight: 600;
+  color: var(--text-secondary);
+  padding: 0 0 10px;
+  letter-spacing: 0.01em;
+}
+
 .comparison-table thead th {
   padding: 14px 16px;
   text-align: left;

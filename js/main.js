@@ -257,3 +257,82 @@ function initLangSwitcher() {
     });
   });
 }
+
+/* ---------- GA4 Custom Event Tracking ---------- */
+function initEventTracking() {
+  if (typeof gtag !== 'function') return;
+
+  // Track WhatsApp float button clicks
+  document.querySelectorAll('.whatsapp-float').forEach(el => {
+    el.addEventListener('click', () => {
+      gtag('event', 'whatsapp_click', {
+        event_category: 'engagement',
+        event_label: window.location.pathname
+      });
+    });
+  });
+
+  // Track CTA button clicks (mid-article and final CTAs)
+  document.querySelectorAll('.article-cta a, .cta-card a, .cta-btn, a[href*="/lp/"]').forEach(el => {
+    el.addEventListener('click', () => {
+      gtag('event', 'cta_click', {
+        event_category: 'conversion',
+        event_label: el.getAttribute('href') || '',
+        page_path: window.location.pathname
+      });
+    });
+  });
+
+  // Track scroll depth on blog articles (50% and 90%)
+  if (window.location.pathname.includes('/blog/') && window.location.pathname !== '/blog/' && window.location.pathname !== '/pt/blog/') {
+    let scrolled50 = false;
+    let scrolled90 = false;
+
+    window.addEventListener('scroll', () => {
+      const scrollPercent = (window.scrollY + window.innerHeight) / document.documentElement.scrollHeight;
+
+      if (!scrolled50 && scrollPercent >= 0.5) {
+        scrolled50 = true;
+        gtag('event', 'scroll_depth', {
+          event_category: 'engagement',
+          event_label: '50%',
+          page_path: window.location.pathname
+        });
+      }
+
+      if (!scrolled90 && scrollPercent >= 0.9) {
+        scrolled90 = true;
+        gtag('event', 'scroll_depth', {
+          event_category: 'engagement',
+          event_label: '90%',
+          page_path: window.location.pathname
+        });
+      }
+    }, { passive: true });
+  }
+
+  // Track outbound link clicks
+  document.querySelectorAll('a[target="_blank"][rel*="noopener"]').forEach(el => {
+    el.addEventListener('click', () => {
+      const url = el.getAttribute('href') || '';
+      if (url.startsWith('http') && !url.includes('azebratech.com')) {
+        gtag('event', 'outbound_click', {
+          event_category: 'engagement',
+          event_label: url,
+          page_path: window.location.pathname
+        });
+      }
+    });
+  });
+
+  // Track landing page views as key event
+  if (window.location.pathname.includes('/lp/')) {
+    gtag('event', 'lp_view', {
+      event_category: 'conversion',
+      event_label: window.location.pathname
+    });
+  }
+}
+
+// Add event tracking to DOMContentLoaded
+document.addEventListener('DOMContentLoaded', initEventTracking);
