@@ -262,12 +262,17 @@ function initLangSwitcher() {
 function initEventTracking() {
   if (typeof gtag !== 'function') return;
 
+  // Enable debug mode when ?debug_mode=true is in the URL
+  const debugMode = new URLSearchParams(window.location.search).has('debug_mode');
+  const dbg = debugMode ? { debug_mode: true } : {};
+
   // Track WhatsApp float button clicks
   document.querySelectorAll('.whatsapp-float').forEach(el => {
     el.addEventListener('click', () => {
       gtag('event', 'whatsapp_click', {
         event_category: 'engagement',
-        event_label: window.location.pathname
+        event_label: window.location.pathname,
+        ...dbg
       });
     });
   });
@@ -278,7 +283,8 @@ function initEventTracking() {
       gtag('event', 'cta_click', {
         event_category: 'conversion',
         event_label: el.getAttribute('href') || '',
-        page_path: window.location.pathname
+        page_path: window.location.pathname,
+        ...dbg
       });
     });
   });
@@ -296,7 +302,8 @@ function initEventTracking() {
         gtag('event', 'scroll_depth', {
           event_category: 'engagement',
           event_label: '50%',
-          page_path: window.location.pathname
+          page_path: window.location.pathname,
+          ...dbg
         });
       }
 
@@ -305,7 +312,8 @@ function initEventTracking() {
         gtag('event', 'scroll_depth', {
           event_category: 'engagement',
           event_label: '90%',
-          page_path: window.location.pathname
+          page_path: window.location.pathname,
+          ...dbg
         });
       }
     }, { passive: true });
@@ -319,7 +327,8 @@ function initEventTracking() {
         gtag('event', 'outbound_click', {
           event_category: 'engagement',
           event_label: url,
-          page_path: window.location.pathname
+          page_path: window.location.pathname,
+          ...dbg
         });
       }
     });
@@ -329,7 +338,8 @@ function initEventTracking() {
   if (window.location.pathname.includes('/lp/')) {
     gtag('event', 'lp_view', {
       event_category: 'conversion',
-      event_label: window.location.pathname
+      event_label: window.location.pathname,
+      ...dbg
     });
   }
 }
